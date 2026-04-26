@@ -9,6 +9,8 @@ interface Props {
 
 const { content, lang } = Astro.props;
 const githubUrl = "https://github.com/serendipitynz/serenebach";
+const licenseUrl = `${githubUrl}/blob/main/LICENSE`;
+const docsUrl = `${githubUrl}/tree/main/docs/help/${lang}`;
 const languageLinks = [
   { lang: "en", href: "/", label: "English" },
   { lang: "ja", href: "/ja/", label: "日本語" },
@@ -24,8 +26,8 @@ const languageLinks = [
       </picture>
     </a>
     <nav class="nav" aria-label="Primary navigation">
+      <a href="#compare">{content.nav.compare}</a>
       <a href="#features">{content.nav.features}</a>
-      <a href="#ai">{content.nav.ai}</a>
       <a href="#deploy">{content.nav.deploy}</a>
       <div class="language-switch" aria-label={content.nav.languageLabel}>
         {languageLinks.map((item) => (
@@ -51,9 +53,12 @@ const languageLinks = [
         <p class="eyebrow">{content.hero.eyebrow}</p>
         <h1>{content.hero.title}</h1>
         <p class="lead">{content.hero.lead}</p>
+        <div class="proof-list" aria-label="Key capabilities">
+          {content.hero.proof.map((item) => <span>{item}</span>)}
+        </div>
         <div class="hero-actions" aria-label="Primary actions">
-          <a class="button primary" href="#start">{content.hero.primaryAction}</a>
-          <a class="button secondary" href="#features">{content.hero.secondaryAction}</a>
+          <a class="button primary" href={githubUrl} rel="noreferrer">{content.hero.primaryAction}</a>
+          <a class="button secondary" href="#compare">{content.hero.secondaryAction}</a>
         </div>
       </div>
 
@@ -76,6 +81,43 @@ const languageLinks = [
       {content.positioning.map((line) => <p>{line}</p>)}
     </section>
 
+    <section id="compare" class="section comparison-section">
+      <div class="section-heading">
+        <p class="eyebrow">{content.comparisonSection.eyebrow}</p>
+        <h2>{content.comparisonSection.title}</h2>
+        <p>{content.comparisonSection.note}</p>
+      </div>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              {content.comparisonSection.columns.map((column) => <th scope="col">{column}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {content.comparisonSection.rows.map((row) => (
+              <tr>
+                <th scope="row">{row.label}</th>
+                {row.values.map((value) => <td>{value}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="quick-start">
+      <div>
+        <p class="eyebrow">{content.quickStartSection.eyebrow}</p>
+        <h2>{content.quickStartSection.title}</h2>
+      </div>
+      <ol>
+        {content.quickStartSection.steps.map((step) => <li>{step}</li>)}
+      </ol>
+      <pre><code>{content.quickStartSection.code}</code></pre>
+    </section>
+
     <section id="features" class="section">
       <div class="section-heading">
         <p class="eyebrow">{content.featuresSection.eyebrow}</p>
@@ -88,6 +130,16 @@ const languageLinks = [
             <p>{feature.body}</p>
           </article>
         ))}
+      </div>
+    </section>
+
+    <section class="split-section migration">
+      <div>
+        <p class="eyebrow">{content.migrationSection.eyebrow}</p>
+        <h2>{content.migrationSection.title}</h2>
+      </div>
+      <div class="prose">
+        <p>{content.migrationSection.body}</p>
       </div>
     </section>
 
@@ -147,15 +199,29 @@ const languageLinks = [
       </div>
     </section>
 
+    <section class="section safety-section">
+      <div class="section-heading">
+        <p class="eyebrow">{content.safetySection.eyebrow}</p>
+        <h2>{content.safetySection.title}</h2>
+      </div>
+      <div class="safety-list">
+        {content.safetySection.points.map((point) => <p>{point}</p>)}
+      </div>
+    </section>
+
     <section id="start" class="cta-section">
       <p class="eyebrow">{content.start.eyebrow}</p>
       <h2>{content.start.title}</h2>
-      <pre><code>go mod tidy
-task seed
-task dev</code></pre>
+      <pre><code>{content.start.code}</code></pre>
       <a class="button primary" href={githubUrl} rel="noreferrer">{content.start.github}</a>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <a href={githubUrl} rel="noreferrer">{content.footer.github}</a>
+    <a href={licenseUrl} rel="noreferrer">{content.footer.license}</a>
+    <a href={docsUrl} rel="noreferrer">{content.footer.docs}</a>
+  </footer>
 
   <dialog class="lightbox" id="screenshot-lightbox" aria-label={content.screenshots.lightboxLabel}>
     <button class="lightbox-close" type="button" aria-label={content.screenshots.closeLabel}>×</button>
