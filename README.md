@@ -34,6 +34,7 @@ src/
 
 public/
 ├── screenshots/
+├── sb_opengraph.png
 ├── serenebach-logo.svg
 └── serenebach-logo-light.svg
 ```
@@ -71,6 +72,12 @@ admin-rebuild-dark.png
 ```
 
 The site switches screenshot variants automatically with `prefers-color-scheme`. The same rule is used for the lightbox preview.
+
+## Open Graph
+
+The shared social preview image is `public/sb_opengraph.png` at `1200 x 630`.
+
+`BaseLayout.astro` emits Open Graph and Twitter Card metadata. The production URL is configured as `https://go.serenebach.net` in `astro.config.mjs`, so `og:image` is emitted as an absolute URL.
 
 ## Verification
 

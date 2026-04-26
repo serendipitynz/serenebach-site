@@ -34,6 +34,7 @@ src/
 
 public/
 ├── screenshots/
+├── sb_opengraph.png
 ├── serenebach-logo.svg
 └── serenebach-logo-light.svg
 ```
@@ -71,6 +72,12 @@ admin-rebuild-dark.png
 ```
 
 サイト表示と lightbox の拡大表示は、どちらも `prefers-color-scheme` に応じて自動で light / dark を切り替えます。
+
+## Open Graph
+
+SNS 共有用の画像は `public/sb_opengraph.png` です。サイズは `1200 x 630` です。
+
+`BaseLayout.astro` で Open Graph / Twitter Card のメタタグを出力します。本番 URL は `astro.config.mjs` で `https://go.serenebach.net` に設定しているため、`og:image` は絶対 URL として出力されます。
 
 ## 確認
 
