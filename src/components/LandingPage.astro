@@ -1,0 +1,193 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import type { LandingContent, Locale } from "../data/content";
+
+interface Props {
+  content: LandingContent;
+  lang: Locale;
+}
+
+const { content, lang } = Astro.props;
+const githubUrl = "https://github.com/serendipitynz/serenebach";
+const languageLinks = [
+  { lang: "en", href: "/", label: "English" },
+  { lang: "ja", href: "/ja/", label: "日本語" },
+];
+---
+
+<BaseLayout title={content.meta.title} description={content.meta.description} lang={lang}>
+  <header class="site-header">
+    <a class="brand" href={lang === "ja" ? "/ja/" : "/"} aria-label="Serene Bach home">
+      <picture>
+        <source srcset="/serenebach-logo-light.svg" media="(prefers-color-scheme: dark)" />
+        <img src="/serenebach-logo.svg" alt="Serene Bach" />
+      </picture>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#features">{content.nav.features}</a>
+      <a href="#ai">{content.nav.ai}</a>
+      <a href="#deploy">{content.nav.deploy}</a>
+      <div class="language-switch" aria-label={content.nav.languageLabel}>
+        {languageLinks.map((item) => (
+          <a href={item.href} aria-current={item.lang === lang ? "page" : undefined}>
+            {item.label}
+          </a>
+        ))}
+      </div>
+      <a class="nav-icon-link" href={githubUrl} rel="noreferrer" aria-label="GitHub repository">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            fill="currentColor"
+            d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.74c-2.78.62-3.37-1.37-3.37-1.37-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.97c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92v2.84c0 .28.18.6.69.5A10.13 10.13 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
+          />
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">{content.hero.eyebrow}</p>
+        <h1>{content.hero.title}</h1>
+        <p class="lead">{content.hero.lead}</p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary" href="#start">{content.hero.primaryAction}</a>
+          <a class="button secondary" href="#features">{content.hero.secondaryAction}</a>
+        </div>
+      </div>
+
+      <button
+        class="screenshot-frame screenshot-button hero-shot"
+        type="button"
+        data-lightbox-src="/screenshots/admin-entry-editor.png"
+        data-lightbox-dark-src="/screenshots/admin-entry-editor-dark.png"
+        data-lightbox-alt={content.screenshots.editorAlt}
+        aria-label={content.screenshots.editorOpenLabel}
+      >
+        <picture>
+          <source srcset="/screenshots/admin-entry-editor-dark.png" media="(prefers-color-scheme: dark)" />
+          <img src="/screenshots/admin-entry-editor.png" alt={content.screenshots.editorAlt} />
+        </picture>
+      </button>
+    </section>
+
+    <section class="positioning" aria-label="Positioning">
+      {content.positioning.map((line) => <p>{line}</p>)}
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">{content.featuresSection.eyebrow}</p>
+        <h2>{content.featuresSection.title}</h2>
+      </div>
+      <div class="feature-grid">
+        {content.features.map((feature) => (
+          <article class="feature-card">
+            <h3>{feature.title}</h3>
+            <p>{feature.body}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section id="ai" class="split-section">
+      <div>
+        <p class="eyebrow">{content.aiSection.eyebrow}</p>
+        <h2>{content.aiSection.title}</h2>
+      </div>
+      <div class="prose">
+        {content.aiSection.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        <button
+          class="screenshot-frame screenshot-button inline-shot"
+          type="button"
+          data-lightbox-src="/screenshots/admin-ai-settings.png"
+          data-lightbox-dark-src="/screenshots/admin-ai-settings-dark.png"
+          data-lightbox-alt={content.screenshots.aiAlt}
+          aria-label={content.screenshots.aiOpenLabel}
+        >
+          <picture>
+            <source srcset="/screenshots/admin-ai-settings-dark.png" media="(prefers-color-scheme: dark)" />
+            <img src="/screenshots/admin-ai-settings.png" alt={content.screenshots.aiAlt} />
+          </picture>
+        </button>
+      </div>
+    </section>
+
+    <section class="section mcp-section">
+      <div class="section-heading">
+        <p class="eyebrow">{content.mcpSection.eyebrow}</p>
+        <h2>{content.mcpSection.title}</h2>
+      </div>
+      <div class="capability-list">
+        {content.mcpSection.capabilities.map((capability) => <span>{capability}</span>)}
+      </div>
+    </section>
+
+    <section id="deploy" class="split-section deploy">
+      <div>
+        <p class="eyebrow">{content.deploySection.eyebrow}</p>
+        <h2>{content.deploySection.title}</h2>
+      </div>
+      <div class="prose">
+        <p>{content.deploySection.body}</p>
+        <button
+          class="screenshot-frame screenshot-button inline-shot"
+          type="button"
+          data-lightbox-src="/screenshots/admin-rebuild.png"
+          data-lightbox-dark-src="/screenshots/admin-rebuild-dark.png"
+          data-lightbox-alt={content.screenshots.rebuildAlt}
+          aria-label={content.screenshots.rebuildOpenLabel}
+        >
+          <picture>
+            <source srcset="/screenshots/admin-rebuild-dark.png" media="(prefers-color-scheme: dark)" />
+            <img src="/screenshots/admin-rebuild.png" alt={content.screenshots.rebuildAlt} />
+          </picture>
+        </button>
+      </div>
+    </section>
+
+    <section id="start" class="cta-section">
+      <p class="eyebrow">{content.start.eyebrow}</p>
+      <h2>{content.start.title}</h2>
+      <pre><code>go mod tidy
+task seed
+task dev</code></pre>
+      <a class="button primary" href={githubUrl} rel="noreferrer">{content.start.github}</a>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="screenshot-lightbox" aria-label={content.screenshots.lightboxLabel}>
+    <button class="lightbox-close" type="button" aria-label={content.screenshots.closeLabel}>×</button>
+    <img src="" alt="" />
+  </dialog>
+
+  <script>
+    const lightbox = document.querySelector<HTMLDialogElement>("#screenshot-lightbox");
+    const lightboxImage = lightbox?.querySelector("img");
+    const closeButton = lightbox?.querySelector<HTMLButtonElement>(".lightbox-close");
+    const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    document.querySelectorAll<HTMLButtonElement>("[data-lightbox-src]").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (!lightbox || !lightboxImage) return;
+
+        const src =
+          darkScheme.matches && button.dataset.lightboxDarkSrc
+            ? button.dataset.lightboxDarkSrc
+            : button.dataset.lightboxSrc;
+
+        lightboxImage.src = src ?? "";
+        lightboxImage.alt = button.dataset.lightboxAlt ?? "";
+        lightbox.showModal();
+      });
+    });
+
+    closeButton?.addEventListener("click", () => lightbox?.close());
+    lightbox?.addEventListener("click", (event) => {
+      if (event.target === lightbox) {
+        lightbox.close();
+      }
+    });
+  </script>
+</BaseLayout>

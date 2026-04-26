@@ -1,0 +1,12 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Serene Bach" description="Redirecting to Serene Bach." lang="en">
+  <main class="redirect-page">
+    <p><a href="/">Continue to Serene Bach</a></p>
+  </main>
+  <script is:inline>
+    window.location.replace("/");
+  </script>
+</BaseLayout>
