@@ -164,8 +164,8 @@ export const content: Record<Locale, LandingContent> = {
     quickStartSection: {
       eyebrow: "Quick start",
       title: "まずはローカルで動かす。",
-      steps: ["バイナリをビルド", "初期データを投入", "ブラウザで管理画面を開く"],
-      code: "go mod tidy\ntask seed\ntask dev",
+      steps: ["依存を整理", "サーバを起動", "ブラウザで初回セットアップ"],
+      code: "go mod tidy\ntask dev",
     },
     featuresSection: {
       eyebrow: "Why Serene Bach",
@@ -225,7 +225,7 @@ export const content: Record<Locale, LandingContent> = {
     start: {
       eyebrow: "Get started",
       title: "README から始める。",
-      code: "go mod tidy\ntask seed\ntask dev",
+      code: "go mod tidy\ntask dev",
       github: "GitHub で見る",
     },
     footer: {
@@ -304,8 +304,8 @@ export const content: Record<Locale, LandingContent> = {
     quickStartSection: {
       eyebrow: "Quick start",
       title: "Run it locally first.",
-      steps: ["Build the binary", "Seed initial data", "Open the admin UI"],
-      code: "go mod tidy\ntask seed\ntask dev",
+      steps: ["Tidy dependencies", "Start the server", "Finish setup in the browser"],
+      code: "go mod tidy\ntask dev",
     },
     featuresSection: {
       eyebrow: "Why Serene Bach",
@@ -365,7 +365,7 @@ export const content: Record<Locale, LandingContent> = {
     start: {
       eyebrow: "Get started",
       title: "Start with the README.",
-      code: "go mod tidy\ntask seed\ntask dev",
+      code: "go mod tidy\ntask dev",
       github: "View on GitHub",
     },
     footer: {
