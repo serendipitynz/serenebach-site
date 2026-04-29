@@ -8,9 +8,11 @@ export interface LandingContent {
   nav: {
     compare: string;
     features: string;
+    templates: string;
     ai: string;
     deploy: string;
     languageLabel: string;
+    menuLabel: string;
   };
   hero: {
     eyebrow: string;
@@ -103,9 +105,11 @@ export const content: Record<Locale, LandingContent> = {
     nav: {
       compare: "比較",
       features: "特徴",
+      templates: "テンプレート",
       ai: "AI 補助",
       deploy: "運用",
       languageLabel: "言語切り替え",
+      menuLabel: "メニューを開く",
     },
     hero: {
       eyebrow: "Self-hosted weblog engine",
@@ -242,10 +246,12 @@ export const content: Record<Locale, LandingContent> = {
     },
     nav: {
       compare: "Compare",
-      features: "Features",
+      features: "Feature",
+      templates: "Templates",
       ai: "AI assist",
       deploy: "Deploy",
       languageLabel: "Language switcher",
+      menuLabel: "Open navigation menu",
     },
     hero: {
       eyebrow: "Self-hosted weblog engine",

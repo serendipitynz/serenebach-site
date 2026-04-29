@@ -1,0 +1,172 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import templates from "../data/generated/templates.json";
+import type { Locale } from "../data/content";
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const copy = {
+  en: {
+    title: "Serene Bach Templates",
+    description: "Download template packages for Serene Bach.",
+    homeLabel: "Back to home",
+    languageLabel: "Language switcher",
+    heroEyebrow: "Templates",
+    heroLead: "Download ready-to-use template packages.",
+    galleryLabel: "Template gallery",
+    previewLabel: "Template preview",
+    closeLabel: "Close",
+    openPreview: (name: string) => `Open ${name} preview`,
+    previewAlt: (name: string) => `${name} preview`,
+    version: "Version",
+    author: "Author",
+    package: "Package",
+    download: "Download",
+    empty: "No templates are available yet.",
+  },
+  ja: {
+    title: "Serene Bach テンプレート",
+    description: "Serene Bach で利用できるテンプレートをダウンロードできます。",
+    homeLabel: "ホームへ戻る",
+    languageLabel: "言語切り替え",
+    heroEyebrow: "Templates",
+    heroLead: "Serene Bach で利用できるテンプレートパッケージをダウンロードできます。",
+    galleryLabel: "テンプレートギャラリー",
+    previewLabel: "テンプレートプレビュー",
+    closeLabel: "閉じる",
+    openPreview: (name: string) => `${name} のプレビューを拡大表示`,
+    previewAlt: (name: string) => `${name} のプレビュー`,
+    version: "バージョン",
+    author: "作者",
+    package: "パッケージ",
+    download: "ダウンロード",
+    empty: "現在、利用できるテンプレートはありません。",
+  },
+}[lang];
+const homeHref = lang === "ja" ? "/ja/" : "/";
+const languageLinks = [
+  { lang: "en", href: "/templates/", label: "English" },
+  { lang: "ja", href: "/ja/templates/", label: "日本語" },
+];
+---
+
+<BaseLayout title={copy.title} description={copy.description} lang={lang}>
+  <header class="site-header">
+    <a class="brand" href={homeHref} aria-label="Serene Bach home">
+      <picture>
+        <source srcset="/serenebach-logo-light.svg" media="(prefers-color-scheme: dark)" />
+        <img src="/serenebach-logo.svg" alt="Serene Bach" />
+      </picture>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <div class="language-switch" aria-label={copy.languageLabel}>
+        {languageLinks.map((item) => (
+          <a href={item.href} aria-current={item.lang === lang ? "page" : undefined}>
+            {item.label}
+          </a>
+        ))}
+      </div>
+      <a class="nav-icon-link template-home-link" href={homeHref} aria-label={copy.homeLabel}>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            fill="currentColor"
+            d="M12 3.1 3 10.5l1.27 1.54L5.5 11.03V20h5.25v-5.25h2.5V20h5.25v-8.97l1.23 1.01L21 10.5 12 3.1Zm4.5 14.9h-1.25v-5.25h-6.5V18H7.5v-8.62L12 5.68l4.5 3.7V18Z"
+          />
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="templates-hero">
+      <p class="eyebrow">{copy.heroEyebrow}</p>
+      <h1>{copy.title}</h1>
+      <p class="lead">{copy.heroLead}</p>
+    </section>
+
+    <section class="section templates-section" aria-label={copy.galleryLabel}>
+      {
+        templates.length > 0 ? (
+          <div class="template-grid">
+            {templates.map((template) => {
+              const templateDescription = template.descriptions?.[lang] ?? template.descriptions?.en ?? "";
+
+              return (
+                <article class="template-card">
+                  <button
+                    class="template-thumb template-preview-button"
+                    type="button"
+                    data-lightbox-src={template.thumbnail}
+                    data-lightbox-alt={copy.previewAlt(template.name)}
+                    aria-label={copy.openPreview(template.name)}
+                  >
+                    <img src={template.thumbnail} alt={copy.previewAlt(template.name)} loading="lazy" />
+                  </button>
+                  <div class="template-body">
+                    <div>
+                      <p class="template-version">{copy.version} {template.version}</p>
+                      <h2>{template.name}</h2>
+                      {templateDescription && <p>{templateDescription}</p>}
+                    </div>
+                    <dl class="template-meta">
+                      <div>
+                        <dt>{copy.author}</dt>
+                        <dd>
+                          {template.siteUrl ? (
+                            <a href={template.siteUrl} rel="noreferrer">{template.author}</a>
+                          ) : (
+                            template.author
+                          )}
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>{copy.package}</dt>
+                        <dd>{template.downloadName}</dd>
+                      </div>
+                    </dl>
+                    <a class="button primary" href={template.download} download>
+                      {copy.download}
+                    </a>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        ) : (
+          <p class="empty-state">{copy.empty}</p>
+        )
+      }
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="template-lightbox" aria-label={copy.previewLabel}>
+    <button class="lightbox-close" type="button" aria-label={copy.closeLabel}>×</button>
+    <img src="" alt="" />
+  </dialog>
+
+  <script>
+    const lightbox = document.querySelector<HTMLDialogElement>("#template-lightbox");
+    const lightboxImage = lightbox?.querySelector("img");
+    const closeButton = lightbox?.querySelector<HTMLButtonElement>(".lightbox-close");
+
+    document.querySelectorAll<HTMLButtonElement>("[data-lightbox-src]").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (!lightbox || !lightboxImage) return;
+
+        lightboxImage.src = button.dataset.lightboxSrc ?? "";
+        lightboxImage.alt = button.dataset.lightboxAlt ?? "";
+        lightbox.showModal();
+      });
+    });
+
+    closeButton?.addEventListener("click", () => lightbox?.close());
+    lightbox?.addEventListener("click", (event) => {
+      if (event.target === lightbox) {
+        lightbox.close();
+      }
+    });
+  </script>
+</BaseLayout>

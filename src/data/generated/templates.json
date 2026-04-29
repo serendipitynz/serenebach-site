@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "asterism",
+    "name": "Asterism",
+    "author": "takkyun",
+    "siteUrl": "http://go.serenebach.net/",
+    "version": "0.01",
+    "descriptions": {
+      "en": "You can change the zodiac symbol being used by modifying the class attribute of the `<body>` element. If no class attribute is specified, the zodiac symbol will be determined at random.",
+      "ja": "body 要素のクラス属性を変更することで、利用される星座記号を変更することができます。 クラス属性が無指定の場合、星座記号はランダムに決定されます。"
+    },
+    "thumbnail": "/templates/asterism/asterism.jpg",
+    "download": "/templates/asterism/asterism_0.01.zip",
+    "downloadName": "asterism_0.01.zip"
+  },
+  {
+    "slug": "gray",
+    "name": "gray",
+    "author": "takkyun",
+    "siteUrl": "http://go.serenebach.net/",
+    "version": "0.01",
+    "descriptions": {
+      "en": "A simple style with a selectable background image.",
+      "ja": "背景イメージを選択可能なシンプルなスタイルです。"
+    },
+    "thumbnail": "/templates/gray/gray.jpg",
+    "download": "/templates/gray/gray_0.01.zip",
+    "downloadName": "gray_0.01.zip"
+  }
+]
