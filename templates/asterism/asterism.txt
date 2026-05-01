@@ -17,10 +17,10 @@ Version: 0.01
 =====
 
 # **Customization**
-You can change the zodiac symbol being used by modifying the class attribute of the `<body>` element.
-If no class attribute is specified, the zodiac symbol will be determined at random.
+You can change the zodiac symbol being used by modifying the class attribute of the `<body>` element. If no class attribute is specified, the zodiac symbol will be determined at random.
 
 The available class attributes are as follows:
+
 - capricorn, aquarius, pisces, aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius
 
 Additionally, the following special class is available:
@@ -35,23 +35,22 @@ This template is distributed under the MIT License.
 ---
 
 # **カスタマイズ**
-body 要素のクラス属性を変更することで、利用される星座記号を変更することができます。
-クラス属性が無指定の場合、星座記号はランダムに決定されます。
+body 要素のクラス属性を変更することで、利用される星座記号を変更することができます。クラス属性が無指定の場合、星座記号はランダムに決定されます。
 
 指定できるクラス属性は以下の通りです。
 
-capricorn   やぎ座
-aquarius    みずがめ座
-pisces      うお座
-aries       おひつじ座
-taurus      おうし座
-gemini      ふたご座
-cancer      かに座
-leo         しし座
-virgo       おとめ座
-libra       てんびん座
-scorpio     さそり座
-sagittarius いて座
+- capricorn: やぎ座
+- aquarius: みずがめ座
+- pisces: うお座
+- aries: おひつじ座
+- taurus: おうし座
+- gemini: ふたご座
+- cancer: かに座
+- leo: しし座
+- virgo: おとめ座
+- libra: てんびん座
+- scorpio: さそり座
+- sagittarius: いて座
 
 また、特殊なクラスとして、以下のものが用意されています。
 
