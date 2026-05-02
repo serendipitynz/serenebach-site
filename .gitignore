@@ -6,3 +6,4 @@ templates/*/readme.md
 templates/*/readme.ja.md
 .DS_Store
 npm-debug.log*
+_sandbox
