@@ -1,30 +1,58 @@
 [
   {
-    "slug": "asterism",
-    "name": "Asterism",
+    "slug": "default",
+    "name": "default",
     "author": "takkyun",
     "siteUrl": "http://go.serenebach.net/",
     "version": "0.01",
     "descriptions": {
-      "en": "You can change the zodiac symbol being used by modifying the class attribute of the `<body>` element. If no class attribute is specified, the zodiac symbol will be determined at random.",
-      "ja": "body 要素のクラス属性を変更することで、利用される星座記号を変更することができます。 クラス属性が無指定の場合、星座記号はランダムに決定されます。"
+      "en": "A default template for Serene Bach v4",
+      "ja": "Serene Bach v4 のデフォルトテンプレート"
     },
-    "thumbnail": "/templates/asterism/asterism.jpg",
-    "download": "/templates/asterism/asterism_0.01.zip",
-    "downloadName": "asterism_0.01.zip"
+    "thumbnail": "/templates/default/default.jpg",
+    "download": "/templates/default/default_0.01.zip",
+    "downloadName": "default_0.01.zip"
   },
   {
-    "slug": "gray",
-    "name": "gray",
+    "slug": "default-forest",
+    "name": "default-forest",
     "author": "takkyun",
     "siteUrl": "http://go.serenebach.net/",
     "version": "0.01",
     "descriptions": {
-      "en": "A simple style with a selectable background image.",
-      "ja": "背景イメージを選択可能なシンプルなスタイルです。"
+      "en": "A default template (Forest version) for Serene Bach v4",
+      "ja": "Serene Bach v4 のデフォルトテンプレート (Forest バージョン)"
     },
-    "thumbnail": "/templates/gray/gray.jpg",
-    "download": "/templates/gray/gray_0.01.zip",
-    "downloadName": "gray_0.01.zip"
+    "thumbnail": "/templates/default-forest/default-forest.jpg",
+    "download": "/templates/default-forest/default-forest_0.01.zip",
+    "downloadName": "default-forest_0.01.zip"
+  },
+  {
+    "slug": "default-ocean",
+    "name": "default-ocean",
+    "author": "takkyun",
+    "siteUrl": "http://go.serenebach.net/",
+    "version": "0.01",
+    "descriptions": {
+      "en": "A default template (Ocean version) for Serene Bach v4",
+      "ja": "Serene Bach v4 のデフォルトテンプレート (Ocean バージョン)"
+    },
+    "thumbnail": "/templates/default-ocean/default-ocean.jpg",
+    "download": "/templates/default-ocean/default-ocean_0.01.zip",
+    "downloadName": "default-ocean_0.01.zip"
+  },
+  {
+    "slug": "default-sunset",
+    "name": "default-sunset",
+    "author": "takkyun",
+    "siteUrl": "http://go.serenebach.net/",
+    "version": "0.01",
+    "descriptions": {
+      "en": "A default template (Sunset version) for Serene Bach v4",
+      "ja": "Serene Bach v4 のデフォルトテンプレート (Sunset バージョン)"
+    },
+    "thumbnail": "/templates/default-sunset/default-sunset.jpg",
+    "download": "/templates/default-sunset/default-sunset_0.01.zip",
+    "downloadName": "default-sunset_0.01.zip"
   }
 ]
