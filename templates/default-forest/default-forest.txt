@@ -21,6 +21,7 @@ A default template (Forest version) for Serene Bach v4
 ---
 
 Serene Bach v4 のデフォルトテンプレート (Forest バージョン)
+
 --===sbTempPack1777693902558907000===
 Content-Type: text/html; name="base.html"
 Content-Transfer-Encoding: Base64
