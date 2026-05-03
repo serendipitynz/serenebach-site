@@ -720,6 +720,7 @@ h3 {
 }
 
 .template-thumb {
+  position: relative;
   appearance: none;
   display: block;
   width: 100%;
@@ -729,6 +730,7 @@ h3 {
   background: var(--color-mist);
   font: inherit;
   text-align: left;
+  overflow: hidden;
 }
 
 .template-thumb img {
@@ -737,6 +739,13 @@ h3 {
   min-height: 280px;
   object-fit: contain;
   transition: transform 180ms ease;
+}
+
+.template-thumb.has-dark .template-thumb-dark {
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  pointer-events: none;
 }
 
 .template-preview-button {
@@ -907,6 +916,45 @@ h3 {
 .lightbox-close:focus-visible {
   outline: 3px solid rgba(255, 255, 255, 0.5);
   outline-offset: 3px;
+}
+
+.lightbox-mode-toggle {
+  position: absolute;
+  top: -46px;
+  left: 0;
+  display: inline-flex;
+  gap: 0;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.lightbox-mode-toggle[hidden] {
+  display: none;
+}
+
+.lightbox-mode-toggle button {
+  padding: 4px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.78);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.lightbox-mode-toggle button[aria-pressed="true"] {
+  background: rgba(255, 255, 255, 0.92);
+  color: #1a1f22;
+}
+
+.lightbox-mode-toggle button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 2px;
 }
 
 @media (max-width: 920px) {
