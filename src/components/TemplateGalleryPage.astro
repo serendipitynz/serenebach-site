@@ -26,6 +26,9 @@ const copy = {
     package: "Package",
     download: "Download",
     empty: "No templates are available yet.",
+    filterPlaceholder: "Filter templates",
+    filterClearLabel: "Clear filter",
+    filterEmpty: "No templates match your filter.",
   },
   ja: {
     title: "Serene Bach テンプレート",
@@ -44,6 +47,9 @@ const copy = {
     package: "パッケージ",
     download: "ダウンロード",
     empty: "現在、利用できるテンプレートはありません。",
+    filterPlaceholder: "テンプレートを絞り込む",
+    filterClearLabel: "絞り込みをクリア",
+    filterEmpty: "条件に一致するテンプレートはありません。",
   },
 }[lang];
 const homeHref = lang === "ja" ? "/ja/" : "/";
@@ -90,12 +96,34 @@ const languageLinks = [
     <section class="section templates-section" aria-label={copy.galleryLabel}>
       {
         templates.length > 0 ? (
-          <div class="template-grid">
-            {templates.map((template) => {
-              const templateDescription = template.descriptions?.[lang] ?? template.descriptions?.en ?? "";
+          <>
+            <div class="template-filter" data-template-filter>
+              <input
+                type="search"
+                id="template-filter-input"
+                placeholder={copy.filterPlaceholder}
+                aria-label={copy.filterPlaceholder}
+                autocomplete="off"
+              />
+              <button
+                class="template-filter-clear"
+                type="button"
+                aria-label={copy.filterClearLabel}
+                aria-controls="template-filter-input"
+              >
+                ×
+              </button>
+            </div>
+            <div class="template-grid">
+              {templates.map((template) => {
+                const templateDescription = template.descriptions?.[lang] ?? template.descriptions?.en ?? "";
+                const filterText = [template.name, template.author, templateDescription]
+                  .filter(Boolean)
+                  .join(" ")
+                  .toLowerCase();
 
-              return (
-                <article class="template-card">
+                return (
+                  <article class="template-card" data-template-search={filterText}>
                   <button
                     class="template-thumb template-preview-button"
                     type="button"
@@ -131,10 +159,12 @@ const languageLinks = [
                       {copy.download}
                     </a>
                   </div>
-                </article>
-              );
-            })}
-          </div>
+                  </article>
+                );
+              })}
+            </div>
+            <p class="template-empty-filter" data-template-empty hidden>{copy.filterEmpty}</p>
+          </>
         ) : (
           <p class="empty-state">{copy.empty}</p>
         )
@@ -168,5 +198,37 @@ const languageLinks = [
         lightbox.close();
       }
     });
+
+    const filterContainer = document.querySelector<HTMLElement>("[data-template-filter]");
+    const filterInput = filterContainer?.querySelector<HTMLInputElement>("input");
+    const filterClear = filterContainer?.querySelector<HTMLButtonElement>(".template-filter-clear");
+    const cards = Array.from(document.querySelectorAll<HTMLElement>(".template-card[data-template-search]"));
+    const emptyMessage = document.querySelector<HTMLElement>("[data-template-empty]");
+
+    function applyFilter(rawValue: string) {
+      const query = rawValue.trim().toLowerCase();
+      let visibleCount = 0;
+      for (const card of cards) {
+        const haystack = card.dataset.templateSearch ?? "";
+        const matched = query === "" || haystack.includes(query);
+        card.hidden = !matched;
+        if (matched) visibleCount += 1;
+      }
+      if (emptyMessage) emptyMessage.hidden = visibleCount > 0 || cards.length === 0;
+      if (filterContainer) filterContainer.dataset.hasValue = rawValue.length > 0 ? "true" : "false";
+    }
+
+    filterInput?.addEventListener("input", (event) => {
+      applyFilter((event.target as HTMLInputElement).value);
+    });
+
+    filterClear?.addEventListener("click", () => {
+      if (!filterInput) return;
+      filterInput.value = "";
+      applyFilter("");
+      filterInput.focus();
+    });
+
+    if (filterInput) applyFilter(filterInput.value);
   </script>
 </BaseLayout>
