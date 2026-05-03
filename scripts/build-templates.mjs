@@ -5,9 +5,36 @@ import { deflateRawSync } from "node:zlib";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourceRoot = path.join(root, "templates");
+const orderJsonPath = path.join(sourceRoot, "order.json");
 const publicRoot = path.join(root, "public", "templates");
 const generatedRoot = path.join(root, "src", "data", "generated");
 const generatedJson = path.join(generatedRoot, "templates.json");
+
+async function readPinnedOrder() {
+  try {
+    const raw = await readFile(orderJsonPath, "utf8");
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed) || !parsed.every((item) => typeof item === "string")) {
+      throw new Error("templates/order.json must be a JSON array of slug strings.");
+    }
+    return parsed;
+  } catch (error) {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  }
+}
+
+function sortDirectories(directories, pinnedOrder) {
+  const pinIndex = new Map(pinnedOrder.map((slug, index) => [slug, index]));
+  return [...directories].sort((a, b) => {
+    const ai = pinIndex.get(a.name);
+    const bi = pinIndex.get(b.name);
+    if (ai !== undefined && bi !== undefined) return ai - bi;
+    if (ai !== undefined) return -1;
+    if (bi !== undefined) return 1;
+    return a.name.localeCompare(b.name);
+  });
+}
 
 const crcTable = new Uint32Array(256);
 for (let n = 0; n < 256; n += 1) {
@@ -241,12 +268,33 @@ async function buildTemplates() {
   }
 
   const templates = [];
+  const pinnedOrder = await readPinnedOrder();
+  const directoryEntries = sortDirectories(
+    directories.filter((item) => item.isDirectory()),
+    pinnedOrder,
+  );
 
-  for (const entry of directories.filter((item) => item.isDirectory()).sort((a, b) => a.name.localeCompare(b.name))) {
+  const presentSlugs = new Set(directoryEntries.map((item) => item.name));
+  const missingPinned = pinnedOrder.filter((slug) => !presentSlugs.has(slug));
+  if (missingPinned.length > 0) {
+    console.warn(
+      `Warning: templates/order.json references missing slug${missingPinned.length === 1 ? "" : "s"}: ${missingPinned.join(", ")}`,
+    );
+  }
+
+  for (const entry of directoryEntries) {
     const slug = entry.name;
     const directory = path.join(sourceRoot, slug);
     const txtPath = path.join(directory, `${slug}.txt`);
     const jpgPath = path.join(directory, `${slug}.jpg`);
+    const darkJpgPath = path.join(directory, `${slug}-dark.jpg`);
+    let hasDarkThumbnail = false;
+    try {
+      await stat(darkJpgPath);
+      hasDarkThumbnail = true;
+    } catch (error) {
+      if (error.code !== "ENOENT") throw error;
+    }
     const source = await readFile(txtPath, "utf8");
     const name = readField(source, "Name");
     const author = readField(source, "Author");
@@ -276,6 +324,9 @@ async function buildTemplates() {
 
     await mkdir(destinationDirectory, { recursive: true });
     await copyFile(jpgPath, destinationImage);
+    if (hasDarkThumbnail) {
+      await copyFile(darkJpgPath, path.join(destinationDirectory, `${slug}-dark.jpg`));
+    }
     await createZip(directory, slug, destinationZip);
 
     templates.push({
@@ -286,6 +337,7 @@ async function buildTemplates() {
       version,
       descriptions: extractDescriptions(source),
       thumbnail: `/templates/${slug}/${slug}.jpg`,
+      thumbnailDark: hasDarkThumbnail ? `/templates/${slug}/${slug}-dark.jpg` : null,
       download: `/templates/${slug}/${zipName}`,
       downloadName: zipName,
     });

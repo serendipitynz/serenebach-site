@@ -1,5 +1,35 @@
 [
   {
+    "slug": "default-pastel",
+    "name": "default-pastel",
+    "author": "takkyun",
+    "siteUrl": "http://go.serenebach.net/",
+    "version": "0.01",
+    "descriptions": {
+      "en": "A default template (Pastel version) for Serene Bach v4",
+      "ja": "Serene Bach v4 のデフォルトテンプレート (Pastel バージョン)"
+    },
+    "thumbnail": "/templates/default-pastel/default-pastel.jpg",
+    "thumbnailDark": "/templates/default-pastel/default-pastel-dark.jpg",
+    "download": "/templates/default-pastel/default-pastel_0.01.zip",
+    "downloadName": "default-pastel_0.01.zip"
+  },
+  {
+    "slug": "monochrome",
+    "name": "monochrome",
+    "author": "takkyun",
+    "siteUrl": "http://go.serenebach.net/",
+    "version": "0.01",
+    "descriptions": {
+      "en": "A simple style with a selectable background image.",
+      "ja": "背景イメージを選択可能なシンプルなスタイルです。"
+    },
+    "thumbnail": "/templates/monochrome/monochrome.jpg",
+    "thumbnailDark": null,
+    "download": "/templates/monochrome/monochrome_0.01.zip",
+    "downloadName": "monochrome_0.01.zip"
+  },
+  {
     "slug": "default",
     "name": "default",
     "author": "takkyun",
@@ -10,6 +40,7 @@
       "ja": "Serene Bach v4 のデフォルトテンプレート"
     },
     "thumbnail": "/templates/default/default.jpg",
+    "thumbnailDark": "/templates/default/default-dark.jpg",
     "download": "/templates/default/default_0.01.zip",
     "downloadName": "default_0.01.zip"
   },
@@ -24,6 +55,7 @@
       "ja": "Serene Bach v4 のデフォルトテンプレート (Forest バージョン)"
     },
     "thumbnail": "/templates/default-forest/default-forest.jpg",
+    "thumbnailDark": "/templates/default-forest/default-forest-dark.jpg",
     "download": "/templates/default-forest/default-forest_0.01.zip",
     "downloadName": "default-forest_0.01.zip"
   },
@@ -38,6 +70,7 @@
       "ja": "Serene Bach v4 のデフォルトテンプレート (Ocean バージョン)"
     },
     "thumbnail": "/templates/default-ocean/default-ocean.jpg",
+    "thumbnailDark": "/templates/default-ocean/default-ocean-dark.jpg",
     "download": "/templates/default-ocean/default-ocean_0.01.zip",
     "downloadName": "default-ocean_0.01.zip"
   },
@@ -52,6 +85,7 @@
       "ja": "Serene Bach v4 のデフォルトテンプレート (Sunset バージョン)"
     },
     "thumbnail": "/templates/default-sunset/default-sunset.jpg",
+    "thumbnailDark": "/templates/default-sunset/default-sunset-dark.jpg",
     "download": "/templates/default-sunset/default-sunset_0.01.zip",
     "downloadName": "default-sunset_0.01.zip"
   }
