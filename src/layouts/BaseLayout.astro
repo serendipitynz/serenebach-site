@@ -41,6 +41,14 @@ const locale = lang === "ja" ? "ja_JP" : "en_US";
     <meta name="twitter:image" content={imageUrl} />
     <link rel="icon" href="/favicon.png" />
     <title>{title}</title>
+    {import.meta.env.PROD && (
+      <script
+        is:inline
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "cf6b863487cf4f73b38aece5579e56b5"}'
+      ></script>
+    )}
   </head>
   <body>
     <slot />
