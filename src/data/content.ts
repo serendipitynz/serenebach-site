@@ -139,7 +139,7 @@ export const content: Record<Locale, LandingContent> = {
     ],
     comparisonSection: {
       eyebrow: "Positioning",
-      title: "ブログの運用感で選べるようにする。",
+      title: "ブログの運用感で選ぶ。",
       note: "Serene Bach は、ブラウザで更新したい個人ブログや小規模サイトを、軽く自分で持ちたい人に向いています。",
       columns: ["Serene Bach v4", "WordPress", "Hugo"],
       rows: [
@@ -167,9 +167,9 @@ export const content: Record<Locale, LandingContent> = {
     },
     quickStartSection: {
       eyebrow: "Quick start",
-      title: "まずはローカルで動かす。",
-      steps: ["依存を整理", "サーバを起動", "ブラウザで初回セットアップ"],
-      code: "go mod tidy\ntask dev",
+      title: "まずはローカルで。",
+      steps: ["リポジトリを取得", "サーバを起動", "ブラウザで初回セットアップ"],
+      code: "git clone git@github.com:serendipitynz/serenebach.git\ncd serenebach\ntask dev",
     },
     featuresSection: {
       eyebrow: "Why Serene Bach",
@@ -213,9 +213,9 @@ export const content: Record<Locale, LandingContent> = {
     },
     migrationSection: {
       eyebrow: "Migration",
-      title: "SB3 の資産を捨てずに移行する。",
+      title: "SB2 / SB3 からの移行。",
       body:
-        "Perl 版 Serene Bach 3 の SQLite データベースから記事を取り込み、テンプレート互換も重視しています。昔からのデザイン資産と運用感を、Go 版でも引き続き使えることを目指しています。",
+        "Perl 版 Serene Bach v2 のテキストベースデータ / v3 の SQLite データベースから記事を取り込み、テンプレート互換も重視しています。昔からのデザイン資産と運用感を、Go 版でも引き続き使えることを目指しています。",
     },
     safetySection: {
       eyebrow: "Data ownership",
@@ -229,7 +229,7 @@ export const content: Record<Locale, LandingContent> = {
     start: {
       eyebrow: "Get started",
       title: "README から始める。",
-      code: "go mod tidy\ntask dev",
+      code: "git clone git@github.com:serendipitynz/serenebach.git\ncd serenebach\ntask dev",
       github: "GitHub で見る",
     },
     footer: {
@@ -310,8 +310,8 @@ export const content: Record<Locale, LandingContent> = {
     quickStartSection: {
       eyebrow: "Quick start",
       title: "Run it locally first.",
-      steps: ["Tidy dependencies", "Start the server", "Finish setup in the browser"],
-      code: "go mod tidy\ntask dev",
+      steps: ["Clone repository", "Start the server", "Finish setup in the browser"],
+      code: "git clone https://github.com/serendipitynz/serenebach\ncd serenebach\ntask dev",
     },
     featuresSection: {
       eyebrow: "Why Serene Bach",
@@ -371,7 +371,7 @@ export const content: Record<Locale, LandingContent> = {
     start: {
       eyebrow: "Get started",
       title: "Start with the README.",
-      code: "go mod tidy\ntask dev",
+      code: "git clone git@github.com:serendipitynz/serenebach.git\ncd serenebach\ntask dev",
       github: "View on GitHub",
     },
     footer: {
