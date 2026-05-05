@@ -22,6 +22,8 @@ A default template (Ocean version) for Serene Bach v4
 
 Serene Bach v4 のデフォルトテンプレート (Ocean バージョン)
 
+===
+
 --===sbTempPack1777693867605301000===
 Content-Type: text/html; name="base.html"
 Content-Transfer-Encoding: Base64

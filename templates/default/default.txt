@@ -22,6 +22,8 @@ A default template for Serene Bach v4
 
 Serene Bach v4 のデフォルトテンプレート
 
+===
+
 --===sbTempPack1777693720480748000===
 Content-Type: text/html; name="base.html"
 Content-Transfer-Encoding: Base64
