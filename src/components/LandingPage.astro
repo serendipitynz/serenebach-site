@@ -9,6 +9,7 @@ interface Props {
 
 const { content, lang } = Astro.props;
 const githubUrl = "https://github.com/serendipitynz/serenebach";
+const githubReadmeUrl = lang === 'ja' ? `${githubUrl}/blob/main/README.ja.md` : `${githubUrl}#readme`;
 const licenseUrl = `${githubUrl}/blob/main/LICENSE`;
 const docsUrl = `${githubUrl}/tree/main/docs/help/${lang}`;
 const languageLinks = [
@@ -237,7 +238,7 @@ const languageLinks = [
       <p class="eyebrow">{content.start.eyebrow}</p>
       <h2>{content.start.title}</h2>
       <pre><code>{content.start.code}</code></pre>
-      <a class="button primary" href={githubUrl} rel="noreferrer">{content.start.github}</a>
+      <a class="button primary" href={githubReadmeUrl} rel="noreferrer">{content.start.github}</a>
     </section>
   </main>
 
