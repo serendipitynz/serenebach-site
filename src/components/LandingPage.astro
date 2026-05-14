@@ -29,8 +29,8 @@ const languageLinks = [
     <nav class="nav" aria-label="Primary navigation">
       <a href="#compare">{content.nav.compare}</a>
       <a href="#features">{content.nav.features}</a>
-      <a href="#deploy">{content.nav.deploy}</a>
       <a class="templates-nav-link" href={lang === "ja" ? "/ja/templates/" : "/templates/"}>{content.nav.templates}</a>
+      <a class="news-nav-link" href={lang === "ja" ? "/news/category/ja/" : "/news/category/en/"}>{content.nav.news}</a>
       <div class="language-switch" aria-label={content.nav.languageLabel}>
         {languageLinks.map((item) => (
           <a href={item.href} aria-current={item.lang === lang ? "page" : undefined}>
@@ -62,11 +62,11 @@ const languageLinks = [
             </svg>
             <span>View on GitHub</span>
           </a>
+          <a href={lang === "ja" ? "/news/category/ja/" : "/news/category/en/"}>{content.nav.news}</a>
           <a href={lang === "ja" ? "/ja/templates/" : "/templates/"}>{content.nav.templates}</a>
           <hr />
           <a href="#compare">{content.nav.compare}</a>
           <a href="#features">{content.nav.features}</a>
-          <a href="#deploy">{content.nav.deploy}</a>
         </div>
       </details>
     </nav>
