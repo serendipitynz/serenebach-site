@@ -9,6 +9,7 @@ export interface LandingContent {
     compare: string;
     features: string;
     templates: string;
+    news: string;
     ai: string;
     deploy: string;
     languageLabel: string;
@@ -106,6 +107,7 @@ export const content: Record<Locale, LandingContent> = {
       compare: "比較",
       features: "特徴",
       templates: "テンプレート",
+      news: "ニュース",
       ai: "AI 補助",
       deploy: "運用",
       languageLabel: "言語切り替え",
@@ -250,6 +252,7 @@ export const content: Record<Locale, LandingContent> = {
       templates: "Templates",
       ai: "AI assist",
       deploy: "Deploy",
+      news: "News",
       languageLabel: "Language switcher",
       menuLabel: "Open navigation menu",
     },

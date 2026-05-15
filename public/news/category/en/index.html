@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="https://go.serenebach.net/news/template/1/style.css">
-<title>Category: English</title>
+<title>Category: Information</title>
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="/" aria-label="Serene Bach home">
       <picture>
-        <source srcset="/serenebach-logo-light.svg" media="(prefers-color-scheme: dark)" />
-        <img src="/serenebach-logo.svg" alt="Serene Bach" />
+        <source srcset="https://go.serenebach.net/serenebach-logo-light.svg" media="(prefers-color-scheme: dark)" />
+        <img src="https://go.serenebach.net/serenebach-logo.svg" alt="Serene Bach" />
       </picture>
     </a>
 
@@ -32,11 +32,136 @@
     </nav>
   </header>
   <main>
-    <section class="templates-hero">
-      <p class="eyebrow">News</p>
-      <h1><a href="https://go.serenebach.net/news/">Serene Bach News</a></h1>
-      <p class="lead"></p>
-    </section>
+<a id="mark15"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information</p>
+        <h2><a href="https://go.serenebach.net/news/entry/15/"><img src="https://go.serenebach.net/news/img/og/15.png" alt="Release Serene Bach v4.0.0-beta.8"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.8 has been released.</p>
+<ul>
+<li>Bug Fix: The AI compose screen (<code>/admin/ai/compose</code>) now respects the display locale configured for the admin panel.</li>
+<li>Development: Introduced golangci-lint and gradually enabled multiple linters to clean up the codebase.</li>
+<li>Development: Split many high-complexity functions to improve readability and maintainability (gocyclo / gocognit / gocritic).</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.8">Serene Bach v4.0.0-beta.8</a></p>
+</div>
+    </article>
+<a id="mark13"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information</p>
+        <h2><a href="https://go.serenebach.net/news/entry/13/"><img src="https://go.serenebach.net/news/img/og/13.png" alt="Release Serene Bach v4.0.0-beta.7"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.7 has been released.</p>
+<ul>
+<li>New Feature: Added pinned entries, which float selected posts to the top of the home and category pages.</li>
+<li>New Feature: Comment acceptance can now be toggled per entry.</li>
+<li>Improvement: Improved the custom tag admin UX with a dynamic hint and a click-to-copy list.</li>
+<li>Bug Fix: Fixed the layout and save behavior of the pinned-entry checkbox in the entry editor.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.7">Serene Bach v4.0.0-beta.7</a></p>
+</div>
+    </article>
+<a id="mark11"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information</p>
+        <h2><a href="https://go.serenebach.net/news/entry/11/"><img src="https://go.serenebach.net/news/img/og/11.png" alt="Release Serene Bach v4.0.0-beta.6"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.6 has been released.</p>
+<ul>
+<li>New Feature: Added support for user-defined <code>{custom_xxx}</code> placeholders in sbtemplate.</li>
+<li>New Feature: Archive boundaries and entry dates are now anchored to a configurable timezone.</li>
+<li>New Feature: Added HTTP server timeouts and graceful shutdown.</li>
+<li>Security: Switched static file serving for <code>/img</code> and <code>/template</code> to <code>os.Root</code>, hardening it against directory traversal.</li>
+<li>Performance: Cached sbtemplate parse results to avoid re-parsing on every page render.</li>
+<li>Internal: Reorganized sbtemplate tag rendering so that HTML escaping is the default.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.6">Serene Bach v4.0.0-beta.6</a></p>
+</div>
+    </article>
+<a id="mark9"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information</p>
+        <h2><a href="https://go.serenebach.net/news/entry/9/"><img src="https://go.serenebach.net/news/img/og/9.png" alt="Release Serene Bach v4.0.0-beta.5"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.5 has been released.</p>
+<ul>
+<li>New Feature: Added flat pages, with OG card support, admin CRUD, per-author ownership, and integration with the static rebuild pipeline.</li>
+<li>New Feature: Added a <code>toppage</code> template block for content that should only appear on the top page.</li>
+<li>New Feature: Profile pages now also use the template selected in the design settings.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.5">Serene Bach v4.0.0-beta.5</a></p>
+</div>
+    </article>
+<a id="mark7"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information</p>
+        <h2><a href="https://go.serenebach.net/news/entry/7/"><img src="https://go.serenebach.net/news/img/og/7.png" alt="Release Serene Bach v4.0.0-beta.4"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.4 has been released.</p>
+<ul>
+<li>Bug Fix: Fixed an issue where a &quot;leave page&quot; confirmation dialog was incorrectly shown in the template &quot;save as&quot; dialog and the AI settings screen even when nothing had been edited.</li>
+<li>Documentation: Updated the Docker-related documentation and build flag descriptions.</li>
+<li>Documentation: Expanded the template reference in the help section and corrected the date format tokens.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.4">Serene Bach v4.0.0-beta.4</a></p>
+</div>
+    </article>
+<a id="mark5"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information</p>
+        <h2><a href="https://go.serenebach.net/news/entry/5/"><img src="https://go.serenebach.net/news/img/og/5.png" alt="Release Serene Bach v4.0.0-beta.3"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.3 has been released.</p>
+<ul>
+<li>Distribution: Docker images are now also available from the GitHub Container Registry (ghcr.io).</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.3">Serene Bach v4.0.0-beta.3</a></p>
+</div>
+    </article>
+<a id="mark3"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information</p>
+        <h2><a href="https://go.serenebach.net/news/entry/3/"><img src="https://go.serenebach.net/news/img/og/3.png" alt="Release Serene Bach v4.0.0-beta.2"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.2 has been released.</p>
+<ul>
+<li>New Feature: Added MCP OAuth Proxy for ChatGPT integration.</li>
+<li>New Feature: Added Docker support.</li>
+<li>Development: Enabled Hot Reload for the admin panel when running <code>task dev</code>.</li>
+<li>Bug Fix: Fixed an issue where the item order in certain admin screens was incorrect.</li>
+<li>New Feature: Enabled Drag &amp; Drop reordering within Link Groups.</li>
+<li>Change: AI-generated suggestions are now displayed in a popup instead of being inserted directly into the editor.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.2">Serene Bach v4.0.0-beta.2</a></p>
+</div>
+    </article>
+<a id="mark1"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information</p>
+        <h2><a href="https://go.serenebach.net/news/entry/1/"><img src="https://go.serenebach.net/news/img/og/1.png" alt="Release Serene Bach v4.0.0-beta.1"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4 is a self-hosted blog engine rebuilt with Go and SQLite, while preserving the familiar user experience of <a href="https://serenebach.net/">Serene Bach v3</a>.</p>
+<p>Some features previously supported in Serene Bach v2 and v3, such as trackbacks and XML-RPC, have been intentionally removed. Other features, such as search, have not been implemented yet.</p>
+<p>On the other hand, Serene Bach v4 also includes several more modern features:</p>
+<ul>
+<li>Markdown support</li>
+<li>Generation of Open Graph images for individual articles</li>
+<li>Responsive design and dark-mode support in the default template</li>
+<li>AI integration for tasks such as generating titles or summarizing selected text</li>
+<li>Docker-based deployment</li>
+</ul>
+<p>Although Serene Bach v4 has been rebuilt in Go, it still supports running as a CGI program.</p>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.1">Serene Bach v4.0.0-beta.1</a></p>
+</div>
+    </article>
   </main>
   <footer class="footer">
     <address>Copyright &copy; 2026 SimpleBoxes / SerendipityNZ.</address>

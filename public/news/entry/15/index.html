@@ -4,8 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<link rel="stylesheet" href="https://go.serenebach.net/news/template/3/style.css">
-<title>Serene Bach News</title>
+<link rel="stylesheet" href="https://go.serenebach.net/news/template/1/style.css">
+<title>Serene Bach News | Release Serene Bach v4.0.0-beta.8</title>
+<meta property="og:title" content="Serene Bach News | Release Serene Bach v4.0.0-beta.8">
+<meta property="og:description" content="Serene Bach v4 Information">
+<meta property="og:image" content="https://go.serenebach.net/news/img/og/15.png">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
   <header class="site-header">
@@ -32,11 +37,21 @@
     </nav>
   </header>
   <main>
-    <section class="news-hero">
-      <p class="eyebrow">News</p>
-      <h1><a href="https://go.serenebach.net/news/">Serene Bach News</a></h1>
-      <p class="lead">Serene Bach v4 Information</p>
-    </section>
+
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information</p>
+        <h2><a href="https://go.serenebach.net/news/entry/15/"><img src="https://go.serenebach.net/news/img/og/15.png" alt="Release Serene Bach v4.0.0-beta.8"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.8 has been released.</p>
+<ul>
+<li>Bug Fix: The AI compose screen (<code>/admin/ai/compose</code>) now respects the display locale configured for the admin panel.</li>
+<li>Development: Introduced golangci-lint and gradually enabled multiple linters to clean up the codebase.</li>
+<li>Development: Split many high-complexity functions to improve readability and maintainability (gocyclo / gocognit / gocritic).</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.8">Serene Bach v4.0.0-beta.8</a></p>
+</div>
+    </article>
   </main>
   <footer class="footer">
     <address>Copyright &copy; 2026 SimpleBoxes / SerendipityNZ.</address>

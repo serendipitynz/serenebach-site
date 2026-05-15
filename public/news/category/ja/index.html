@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="https://go.serenebach.net/news/template/2/style.css">
-<title>Category: 日本語</title>
+<title>Category: お知らせ</title>
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="/ja/" aria-label="Serene Bach home">
       <picture>
-        <source srcset="/serenebach-logo-light.svg" media="(prefers-color-scheme: dark)" />
-        <img src="/serenebach-logo.svg" alt="Serene Bach" />
+        <source srcset="https://go.serenebach.net/serenebach-logo-light.svg" media="(prefers-color-scheme: dark)" />
+        <img src="https://go.serenebach.net/serenebach-logo.svg" alt="Serene Bach" />
       </picture>
     </a>
 
@@ -32,15 +32,140 @@
     </nav>
   </header>
   <main>
-    <section class="templates-hero">
-      <p class="eyebrow">ニュース</p>
-      <h1><a href="https://go.serenebach.net/news/">Serene Bach News</a></h1>
-      <p class="lead"></p>
-    </section>
+<a id="mark16"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ</p>
+        <h2><a href="https://go.serenebach.net/news/entry/16/"><img src="https://go.serenebach.net/news/img/og/16.png" alt="Serene Bach v4.0.0-beta.8 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.8 をリリースしています。</p>
+<ul>
+<li>不具合修正: AI 作文画面 (<code>/admin/ai/compose</code>) が管理画面の表示言語設定に従って動作するようにしました</li>
+<li>開発: golangci-lint を導入し、複数のリンタを段階的に有効化してコードベース全体を整備しました</li>
+<li>開発: 複雑度の高い関数を多数分割し、可読性と保守性を高めました（gocyclo / gocognit / gocritic 等への対応）</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.8">Serene Bach v4.0.0-beta.8</a></p>
+</div>
+    </article>
+<a id="mark14"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ</p>
+        <h2><a href="https://go.serenebach.net/news/entry/14/"><img src="https://go.serenebach.net/news/img/og/14.png" alt="Serene Bach v4.0.0-beta.7 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.7 をリリースしています。</p>
+<ul>
+<li>機能追加: 記事のピン留め機能を追加しました（選択した記事をトップページとカテゴリページの先頭に固定表示します）</li>
+<li>機能追加: 記事ごとにコメントの受付有無を切り替えられるようにしました</li>
+<li>改善: カスタムタグ管理画面の UX を改善しました（動的なヒント表示と、一覧クリックでのコピーに対応）</li>
+<li>不具合修正: 記事編集画面のピン留めチェックボックスのレイアウトと保存時の挙動を修正しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.7">Serene Bach v4.0.0-beta.7</a></p>
+</div>
+    </article>
+<a id="mark12"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ</p>
+        <h2><a href="https://go.serenebach.net/news/entry/12/"><img src="https://go.serenebach.net/news/img/og/12.png" alt="Serene Bach v4.0.0-beta.6 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.6 をリリースしています。</p>
+<ul>
+<li>機能追加: テンプレート内で利用できるユーザー定義プレースホルダ <code>{custom_xxx}</code> に対応しました</li>
+<li>機能追加: アーカイブの区切りや記事の日付を、設定したタイムゾーンに固定して扱うようにしました</li>
+<li>機能追加: HTTP サーバにタイムアウト設定とグレースフルシャットダウンを追加しました</li>
+<li>セキュリティ: 静的ファイル配信 (<code>/img</code>, <code>/template</code>) を <code>os.Root</code> ベースに変更し、ディレクトリトラバーサルに対して堅牢化しました</li>
+<li>性能改善: sbtemplate のパース結果をキャッシュし、ページ描画ごとの再パースを避けるようにしました</li>
+<li>内部改善: sbtemplate のタグ展開を整理し、HTML エスケープをデフォルト動作に変更しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.6">Serene Bach v4.0.0-beta.6</a></p>
+</div>
+    </article>
+<a id="mark10"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ</p>
+        <h2><a href="https://go.serenebach.net/news/entry/10/"><img src="https://go.serenebach.net/news/img/og/10.png" alt="Serene Bach v4.0.0-beta.5 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.5 をリリースしています。</p>
+<ul>
+<li>機能追加: フラットページ機能を追加しました（OG カード対応、管理画面での CRUD、執筆者ごとの所有権、静的再構築への組み込みまで含みます）</li>
+<li>機能追加: トップページにだけ表示したい内容を記述できるテンプレートブロック <code>toppage</code> を追加しました</li>
+<li>機能追加: プロフィールページにもデザイン設定で指定したテンプレートが適用されるようにしました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.5">Serene Bach v4.0.0-beta.5</a></p>
+</div>
+    </article>
+<a id="mark8"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ</p>
+        <h2><a href="https://go.serenebach.net/news/entry/8/"><img src="https://go.serenebach.net/news/img/og/8.png" alt="Serene Bach v4.0.0-beta.4 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.4 をリリースしています。</p>
+<ul>
+<li>不具合修正: テンプレートの別名保存ダイアログと AI 設定画面で、編集していないのに離脱確認ダイアログが表示されてしまう不具合を修正しました</li>
+<li>ドキュメント: Docker 関連のドキュメントとビルドフラグの記述を更新しました</li>
+<li>ドキュメント: ヘルプ内のテンプレートリファレンスを拡充し、日付フォーマットトークンの記述を修正しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.4">Serene Bach v4.0.0-beta.4</a></p>
+</div>
+    </article>
+<a id="mark6"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ</p>
+        <h2><a href="https://go.serenebach.net/news/entry/6/"><img src="https://go.serenebach.net/news/img/og/6.png" alt="Serene Bach v4.0.0-beta.3 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.3 をリリースしています。</p>
+<ul>
+<li>配布: Docker イメージを GitHub Container Registry (ghcr.io) からも入手できるようにしました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.3">Serene Bach v4.0.0-beta.3</a></p>
+</div>
+    </article>
+<a id="mark4"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ</p>
+        <h2><a href="https://go.serenebach.net/news/entry/4/"><img src="https://go.serenebach.net/news/img/og/4.png" alt="Serene Bach v4.0.0-beta.2 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.2 をリリースしています。</p>
+<ul>
+<li>機能追加: ChatGPT 連携用に MCP OAuth プロキシを追加しました</li>
+<li>機能追加: Docker サポートを追加しました</li>
+<li>開発: <code>task dev</code> 実行時の管理画面ホットリロードに対応しました</li>
+<li>不具合修正: 一部の管理画面の項目順序が余っていた不具合を修正しました</li>
+<li>機能追加: リンクグループ内でドラッグ＆ドロップによる再配置に対応しました</li>
+<li>仕様変更: AI 提案内容をエディタに直接挿入するのではなく、ポップアップ表示するようにしました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.2">Serene Bach v4.0.0-beta.2</a></p>
+</div>
+    </article>
+<a id="mark2"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ</p>
+        <h2><a href="https://go.serenebach.net/news/entry/2/"><img src="https://go.serenebach.net/news/img/og/2.png" alt="Serene Bach v4.0.0-beta.1 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4 は、<a href="https://serenebach.net/">Serene Bach v3</a> の使用感を引き継ぎながら、Go + SQLite で再構築した セルフホスト型ブログエンジンです。</p>
+<p>Serene Bach v2 や v3 でサポートしていたトラックバックや XML-RPC などの意図的に落とした機能や、検索機能などまだ未実装なものもあります。</p>
+<p>一方で、いくつか今風とも言える機能を取り込んでもいます。</p>
+<ul>
+<li>Markdown 対応</li>
+<li>記事ごとの open graph イメージの作成</li>
+<li>デフォルトテンプレートのレスポンシブ対応・ダークモード対応</li>
+<li>生成 AI にタイトルを考えてもらったり、選択した文章の要約をしてもらったりする AI 連携機能</li>
+<li>Docker を利用した設置</li>
+</ul>
+<p>Go で作り直しましたが、引き続き CGI として動作させるモードもサポートしています。</p>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.1">Serene Bach v4.0.0-beta.1</a></p>
+</div>
+    </article>
   </main>
   <footer class="footer">
-  <address>Copyright &copy; 2026 SimpleBoxes / SerendipityNZ.</address>
-  <p id="powered_by">Powered by <a href="https://github.com/serendipitynz/serenebach">Serene Bach 4.0.0-beta.9</a></p>
+    <address>Copyright &copy; 2026 SimpleBoxes / SerendipityNZ.</address>
+    <p id="powered_by">Powered by <a href="https://github.com/serendipitynz/serenebach">Serene Bach 4.0.0-beta.9</a></p>
   </footer>
 </body>
 </html>
