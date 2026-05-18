@@ -32,6 +32,21 @@
     </nav>
   </header>
   <main>
+<a id="mark24"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ on 2026-05-19</p>
+        <h2><a href="https://go.serenebach.net/news/entry/v400b012-ja/"><img src="https://go.serenebach.net/news/img/og/24.png" alt="Serene Bach v4.0.0-beta.12 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.12 をリリースしています。</p>
+<ul>
+<li>機能追加: AI 作成機能のシステムプロンプト・<code>max_tokens</code>・<code>temperature</code> をバイナリに同梱した JSONC カタログファイルで管理するようにしました。一箇所を編集するだけでプロンプトの文言やパラメータを調整できます</li>
+<li>機能追加: CLI に Markdown インポーターを追加しました。YAML フロントマターを含む <code>*.md</code> ファイルが置かれたディレクトリを <code>serenebach import --source=md &lt;dir&gt;</code> で指定すると、エントリとして一括登録・更新できます</li>
+<li>改善: タイトル・タグ・キーワードなど短文生成アクションの <code>max_tokens</code> 上限を 200 から 2048 に引き上げました。Thinking モデル使用時に出力が途中で切れる問題に対応したものです</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.12">Serene Bach v4.0.0-beta.12</a></p>
+</div>
+    </article>
 <a id="mark22"></a>
     <article class="entry">
       <div>
@@ -172,28 +187,10 @@
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.3">Serene Bach v4.0.0-beta.3</a></p>
 </div>
     </article>
-<a id="mark4"></a>
-    <article class="entry">
-      <div>
-        <p class="eyebrow">お知らせ on 2026-05-05</p>
-        <h2><a href="https://go.serenebach.net/news/entry/v400b002-ja/"><img src="https://go.serenebach.net/news/img/og/4.png" alt="Serene Bach v4.0.0-beta.2 リリース"></a></h2>
-      </div>
-      <div class="entry_body"><p>Serene Bach v4.0.0-beta.2 をリリースしています。</p>
-<ul>
-<li>機能追加: ChatGPT 連携用に MCP OAuth プロキシを追加しました</li>
-<li>機能追加: Docker サポートを追加しました</li>
-<li>開発: <code>task dev</code> 実行時の管理画面ホットリロードに対応しました</li>
-<li>不具合修正: 一部の管理画面の項目順序が余っていた不具合を修正しました</li>
-<li>機能追加: リンクグループ内でドラッグ＆ドロップによる再配置に対応しました</li>
-<li>仕様変更: AI 提案内容をエディタに直接挿入するのではなく、ポップアップ表示するようにしました</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.2">Serene Bach v4.0.0-beta.2</a></p>
-</div>
-    </article>
   </main>
   <footer class="footer">
     <address>Copyright &copy; 2026 SimpleBoxes / SerendipityNZ.</address>
-    <p id="powered_by">Powered by <a href="https://github.com/serendipitynz/serenebach">Serene Bach 4.0.0-beta.11</a></p>
+    <p id="powered_by">Powered by <a href="https://github.com/serendipitynz/serenebach">Serene Bach 4.0.0-beta.12</a></p>
   </footer>
 </body>
 </html>

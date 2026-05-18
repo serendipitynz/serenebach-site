@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="https://go.serenebach.net/news/template/1/style.css">
-<title>Serene Bach News | Release Serene Bach v4.0.0-beta.6</title>
-<meta property="og:title" content="Serene Bach News | Release Serene Bach v4.0.0-beta.6">
+<title>Serene Bach News | Release Serene Bach v4.0.0-beta.12</title>
+<meta property="og:title" content="Serene Bach News | Release Serene Bach v4.0.0-beta.12">
 <meta property="og:description" content="Serene Bach v4 Information">
-<meta property="og:image" content="https://go.serenebach.net/news/img/og/11.png">
+<meta property="og:image" content="https://go.serenebach.net/news/img/og/23.png">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -40,19 +40,16 @@
 
     <article class="entry">
       <div>
-        <p class="eyebrow">Information on 2026-05-09</p>
-        <h2><a href="https://go.serenebach.net/news/entry/v400b006-en/"><img src="https://go.serenebach.net/news/img/og/11.png" alt="Release Serene Bach v4.0.0-beta.6"></a></h2>
+        <p class="eyebrow">Information on 2026-05-19</p>
+        <h2><a href="https://go.serenebach.net/news/entry/v400b012-en/"><img src="https://go.serenebach.net/news/img/og/23.png" alt="Release Serene Bach v4.0.0-beta.12"></a></h2>
       </div>
-      <div class="entry_body"><p>Serene Bach v4.0.0-beta.6 has been released.</p>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.12 has been released.</p>
 <ul>
-<li>New Feature: Added support for user-defined <code>{custom_xxx}</code> placeholders in sbtemplate.</li>
-<li>New Feature: Archive boundaries and entry dates are now anchored to a configurable timezone.</li>
-<li>New Feature: Added HTTP server timeouts and graceful shutdown.</li>
-<li>Security: Switched static file serving for <code>/img</code> and <code>/template</code> to <code>os.Root</code>, hardening it against directory traversal.</li>
-<li>Performance: Cached sbtemplate parse results to avoid re-parsing on every page render.</li>
-<li>Internal: Reorganized sbtemplate tag rendering so that HTML escaping is the default.</li>
+<li>New Feature: AI compose prompts (system prompts, <code>max_tokens</code>, <code>temperature</code>) are now stored in an editable JSONC catalogue file embedded in the binary, making it easy to tweak wording and limits in one place.</li>
+<li>New Feature: Added a markdown source importer to the CLI. Running <code>serenebach import --source=md &lt;dir&gt;</code> upserts entries from a directory of <code>*.md</code> files with YAML front-matter.</li>
+<li>Improvement: Raised the <code>max_tokens</code> cap for short-form AI compose actions (title / tags / keywords) from 200 to 2048 to prevent truncation when using reasoning / thinking models.</li>
 </ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.6">Serene Bach v4.0.0-beta.6</a></p>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.12">Serene Bach v4.0.0-beta.12</a></p>
 </div>
     </article>
   </main>
