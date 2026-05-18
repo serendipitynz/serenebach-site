@@ -11,3 +11,4 @@ _sandbox
 /public/news/rss.xml
 /public/news/atom.xml
 /public/news/archive/
+.claude/settings.local.json
