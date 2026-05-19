@@ -25,7 +25,9 @@ export MD_SOURCE_PATH="$BASE/content"
 
 serenebach import --source=md $MD_SOURCE_PATH
 serenebach build --out="$SB_REBUILD_OUT"
-git add "$MD_SOURCE_PATH"
-git add "$SB_REBUILD_OUT"
-git commit -m "feat(news): update news $(date +%Y-%m-%d)"
-git push
+if [ "$1" = "publish" ]; then
+  git add "$MD_SOURCE_PATH"
+  git add "$SB_REBUILD_OUT"
+  git commit -m "feat(news): update news $(date +%Y-%m-%d)"
+  git push
+fi
