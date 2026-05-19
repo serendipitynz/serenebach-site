@@ -8,7 +8,5 @@ templates/*/readme.ja.md
 npm-debug.log*
 _sandbox
 .vscode/
-/public/news/rss.xml
-/public/news/atom.xml
 /public/news/archive/
 .claude/settings.local.json
