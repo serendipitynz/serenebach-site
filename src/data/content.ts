@@ -34,6 +34,11 @@ export interface LandingContent {
     closeLabel: string;
   };
   positioning: string[];
+  newsSection: {
+    eyebrow: string;
+    title: string;
+    viewAll: string;
+  };
   comparisonSection: {
     eyebrow: string;
     title: string;
@@ -139,6 +144,11 @@ export const content: Record<Locale, LandingContent> = {
       "ブラウザで更新したい。でも、大きな CMS は持ち込みたくない人のために。",
       "CGI 時代の手軽さそのままに、SQLite、静的再構築、AI 連携を足しました。",
     ],
+    newsSection: {
+      eyebrow: "News",
+      title: "お知らせ",
+      viewAll: "ニュースをもっと見る",
+    },
     comparisonSection: {
       eyebrow: "Positioning",
       title: "ブログの運用感で選ぶ。",
@@ -282,6 +292,11 @@ export const content: Record<Locale, LandingContent> = {
       "For people who want browser-based publishing without carrying a large CMS stack.",
       "It keeps the CGI-era ability to place your blog almost anywhere, with SQLite, static rebuilds, and AI integration added in.",
     ],
+    newsSection: {
+      eyebrow: "News",
+      title: "Latest updates",
+      viewAll: "More news",
+    },
     comparisonSection: {
       eyebrow: "Positioning",
       title: "Choose by publishing workflow.",

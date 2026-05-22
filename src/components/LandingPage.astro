@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import type { LandingContent, Locale } from "../data/content";
+import { getLatestNews, formatNewsDate } from "../data/news";
 
 interface Props {
   content: LandingContent;
@@ -16,6 +17,8 @@ const languageLinks = [
   { lang: "en", href: "/", label: "English" },
   { lang: "ja", href: "/ja/", label: "日本語" },
 ];
+const latestNews = getLatestNews(lang, 3);
+const newsIndexHref = lang === "ja" ? "/news/category/ja/" : "/news/category/en/";
 ---
 
 <BaseLayout title={content.meta.title} description={content.meta.description} lang={lang}>
@@ -105,6 +108,26 @@ const languageLinks = [
     <section class="positioning" aria-label="Positioning">
       {content.positioning.map((line) => <p>{line}</p>)}
     </section>
+
+    {latestNews.length > 0 && (
+      <section class="news-highlights" aria-label={content.newsSection.title}>
+        <div class="news-highlights-heading">
+          <p class="eyebrow">{content.newsSection.eyebrow}</p>
+          <h2>{content.newsSection.title}</h2>
+        </div>
+        <ul class="news-highlights-list">
+          {latestNews.map((item) => (
+            <li>
+              <a href={item.href}>
+                <time datetime={item.published}>{formatNewsDate(item.published, lang)}</time>
+                <span>{item.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a class="news-highlights-more" href={newsIndexHref}>{content.newsSection.viewAll}</a>
+      </section>
+    )}
 
     <section id="compare" class="section comparison-section">
       <div class="section-heading">
