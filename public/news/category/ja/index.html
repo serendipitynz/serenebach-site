@@ -32,6 +32,29 @@
     </nav>
   </header>
   <main>
+<a id="mark28"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ on 2026-05-23</p>
+        <h2><a href="https://go.serenebach.net/news/entry/v400b014-ja/"><img src="https://go.serenebach.net/news/img/og/28.png" alt="Serene Bach v4.0.0-beta.14 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.14 をリリースしています。</p>
+<ul>
+<li>修正: アナリティクスおよび MCP OAuth プロキシにおける共有ステートの競合状態を解消しました</li>
+<li>修正: サイドバーのカテゴリ件数を公開済みエントリのみ対象に集計するよう修正しました</li>
+<li>修正: EntryResolver を通じてスラッグ形式のエントリビュー数がエントリに正しく紐づくよう修正しました</li>
+<li>リファクタリング: writeJSON を util.go へ移動し、コード構成を整理しました</li>
+<li>リファクタリング: parsePositiveID ヘルパーを導入し、各ハンドラに適用しました</li>
+<li>リファクタリング: postFormValue ヘルパーを追加し、各ハンドラに適用しました</li>
+<li>リファクタリング: 一覧ページでの重複した weblog 読み込みを排除しました</li>
+<li>パフォーマンス: writeEntries でタグをまとめて取得するよう変更しました</li>
+<li>パフォーマンス: 前後記事のナビゲーションをデータベースクエリからソート済みスライスの計算に置き換えました</li>
+<li>パフォーマンス: shared templateCache を活用してコメントをまとめて取得するよう改善しました</li>
+<li>パフォーマンス: 閲覧数上位エントリの取得クエリを SQL レベルで最適化しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.14">Serene Bach v4.0.0-beta.14</a></p>
+</div>
+    </article>
 <a id="mark26"></a>
     <article class="entry">
       <div>
@@ -177,25 +200,10 @@
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.5">Serene Bach v4.0.0-beta.5</a></p>
 </div>
     </article>
-<a id="mark8"></a>
-    <article class="entry">
-      <div>
-        <p class="eyebrow">お知らせ on 2026-05-06</p>
-        <h2><a href="https://go.serenebach.net/news/entry/v400b004-ja/"><img src="https://go.serenebach.net/news/img/og/8.png" alt="Serene Bach v4.0.0-beta.4 リリース"></a></h2>
-      </div>
-      <div class="entry_body"><p>Serene Bach v4.0.0-beta.4 をリリースしています。</p>
-<ul>
-<li>不具合修正: テンプレートの別名保存ダイアログと AI 設定画面で、編集していないのに離脱確認ダイアログが表示されてしまう不具合を修正しました</li>
-<li>ドキュメント: Docker 関連のドキュメントとビルドフラグの記述を更新しました</li>
-<li>ドキュメント: ヘルプ内のテンプレートリファレンスを拡充し、日付フォーマットトークンの記述を修正しました</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.4">Serene Bach v4.0.0-beta.4</a></p>
-</div>
-    </article>
   </main>
   <footer class="footer">
     <address>Copyright &copy; 2026 SimpleBoxes / SerendipityNZ.</address>
-    <p id="powered_by">Powered by <a href="https://github.com/serendipitynz/serenebach">Serene Bach 4.0.0-beta.13</a></p>
+    <p id="powered_by">Powered by <a href="https://github.com/serendipitynz/serenebach">Serene Bach 4.0.0-beta.14</a></p>
   </footer>
 </body>
 </html>

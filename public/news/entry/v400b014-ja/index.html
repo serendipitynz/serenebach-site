@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="https://go.serenebach.net/news/template/2/style.css">
+<title>Serene Bach News | Serene Bach v4.0.0-beta.14 リリース</title>
+<meta property="og:title" content="Serene Bach News | Serene Bach v4.0.0-beta.14 リリース">
+<meta property="og:description" content="Serene Bach v4 Information">
+<meta property="og:image" content="https://go.serenebach.net/news/img/og/28.png">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/ja/" aria-label="Serene Bach home">
+      <picture>
+        <source srcset="https://go.serenebach.net/serenebach-logo-light.svg" media="(prefers-color-scheme: dark)" />
+        <img src="https://go.serenebach.net/serenebach-logo.svg" alt="Serene Bach" />
+      </picture>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <div class="language-switch" aria-label="Language switcher">
+        <a href="/news/category/en/"> English </a>
+        <a href="/news/category/ja/" aria-current="page"> 日本語 </a>
+      </div>
+      <a class="nav-icon-link template-home-link" href="/ja/">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            fill="currentColor"
+            d="M12 3.1 3 10.5l1.27 1.54L5.5 11.03V20h5.25v-5.25h2.5V20h5.25v-8.97l1.23 1.01L21 10.5 12 3.1Zm4.5 14.9h-1.25v-5.25h-6.5V18H7.5v-8.62L12 5.68l4.5 3.7V18Z"
+          />
+        </svg>
+      </a>
+    </nav>
+  </header>
+  <main>
+
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ on 2026-05-23</p>
+        <h2><a href="https://go.serenebach.net/news/entry/v400b014-ja/"><img src="https://go.serenebach.net/news/img/og/28.png" alt="Serene Bach v4.0.0-beta.14 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.14 をリリースしています。</p>
+<ul>
+<li>修正: アナリティクスおよび MCP OAuth プロキシにおける共有ステートの競合状態を解消しました</li>
+<li>修正: サイドバーのカテゴリ件数を公開済みエントリのみ対象に集計するよう修正しました</li>
+<li>修正: EntryResolver を通じてスラッグ形式のエントリビュー数がエントリに正しく紐づくよう修正しました</li>
+<li>リファクタリング: writeJSON を util.go へ移動し、コード構成を整理しました</li>
+<li>リファクタリング: parsePositiveID ヘルパーを導入し、各ハンドラに適用しました</li>
+<li>リファクタリング: postFormValue ヘルパーを追加し、各ハンドラに適用しました</li>
+<li>リファクタリング: 一覧ページでの重複した weblog 読み込みを排除しました</li>
+<li>パフォーマンス: writeEntries でタグをまとめて取得するよう変更しました</li>
+<li>パフォーマンス: 前後記事のナビゲーションをデータベースクエリからソート済みスライスの計算に置き換えました</li>
+<li>パフォーマンス: shared templateCache を活用してコメントをまとめて取得するよう改善しました</li>
+<li>パフォーマンス: 閲覧数上位エントリの取得クエリを SQL レベルで最適化しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.14">Serene Bach v4.0.0-beta.14</a></p>
+</div>
+    </article>
+  </main>
+  <footer class="footer">
+    <address>Copyright &copy; 2026 SimpleBoxes / SerendipityNZ.</address>
+    <p id="powered_by">Powered by <a href="https://github.com/serendipitynz/serenebach">Serene Bach 4.0.0-beta.14</a></p>
+  </footer>
+</body>
+</html>

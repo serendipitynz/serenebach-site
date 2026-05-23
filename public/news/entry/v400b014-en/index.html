@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="https://go.serenebach.net/news/template/1/style.css">
-<title>Serene Bach News | Release Serene Bach v4.0.0-beta.2</title>
-<meta property="og:title" content="Serene Bach News | Release Serene Bach v4.0.0-beta.2">
+<title>Serene Bach News | Release Serene Bach v4.0.0-beta.14</title>
+<meta property="og:title" content="Serene Bach News | Release Serene Bach v4.0.0-beta.14">
 <meta property="og:description" content="Serene Bach v4 Information">
-<meta property="og:image" content="https://go.serenebach.net/news/img/og/3.png">
+<meta property="og:image" content="https://go.serenebach.net/news/img/og/27.png">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -40,19 +40,24 @@
 
     <article class="entry">
       <div>
-        <p class="eyebrow">Information on 2026-05-05</p>
-        <h2><a href="https://go.serenebach.net/news/entry/v400b002-en/"><img src="https://go.serenebach.net/news/img/og/3.png" alt="Release Serene Bach v4.0.0-beta.2"></a></h2>
+        <p class="eyebrow">Information on 2026-05-23</p>
+        <h2><a href="https://go.serenebach.net/news/entry/v400b014-en/"><img src="https://go.serenebach.net/news/img/og/27.png" alt="Release Serene Bach v4.0.0-beta.14"></a></h2>
       </div>
-      <div class="entry_body"><p>Serene Bach v4.0.0-beta.2 has been released.</p>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.14 has been released.</p>
 <ul>
-<li>New Feature: Added MCP OAuth Proxy for ChatGPT integration.</li>
-<li>New Feature: Added Docker support.</li>
-<li>Development: Enabled Hot Reload for the admin panel when running <code>task dev</code>.</li>
-<li>Bug Fix: Fixed an issue where the item order in certain admin screens was incorrect.</li>
-<li>New Feature: Enabled Drag &amp; Drop reordering within Link Groups.</li>
-<li>Change: AI-generated suggestions are now displayed in a popup instead of being inserted directly into the editor.</li>
+<li>Fix: Resolved shared state race conditions in analytics and the MCP OAuth proxy.</li>
+<li>Fix: Corrected bulk category counts to include published entries only in the sidebar.</li>
+<li>Fix: Attributed slug-based entry views to entries via EntryResolver.</li>
+<li>Refactor: Moved writeJSON to util.go for better code organisation.</li>
+<li>Refactor: Introduced parsePositiveID helper and applied it across handlers.</li>
+<li>Refactor: Added postFormValue helper and applied it across handlers.</li>
+<li>Refactor: Eliminated duplicate weblog loads on list pages.</li>
+<li>Performance: Switched to bulk tag lookup in writeEntries.</li>
+<li>Performance: Computed prev/next navigation from a sorted slice instead of database queries.</li>
+<li>Performance: Enabled bulk comments retrieval with a shared templateCache.</li>
+<li>Performance: Optimised the top viewed entries query in SQL.</li>
 </ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.2">Serene Bach v4.0.0-beta.2</a></p>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.14">Serene Bach v4.0.0-beta.14</a></p>
 </div>
     </article>
   </main>

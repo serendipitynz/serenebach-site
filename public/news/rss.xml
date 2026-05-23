@@ -5,9 +5,57 @@
     <link>https://go.serenebach.net/news/</link>
     <description>Serene Bach v4 Information</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 22 May 2026 09:31:47 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 11:14:23 +0000</lastBuildDate>
     <generator>serenebach</generator>
     <atom:link href="https://go.serenebach.net/news/rss.xml" rel="self" type="application/rss+xml; charset=utf-8"></atom:link>
+    <item>
+      <title>Release Serene Bach v4.0.0-beta.14</title>
+      <link>https://go.serenebach.net/news/entry/v400b014-en/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b014-en/</guid>
+      <pubDate>Fri, 22 May 2026 15:00:00 +0000</pubDate>
+      <category>Information</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.14 has been released.</p>
+<ul>
+<li>Fix: Resolved shared state race conditions in analytics and the MCP OAuth proxy.</li>
+<li>Fix: Corrected bulk category counts to include published entries only in the sidebar.</li>
+<li>Fix: Attributed slug-based entry views to entries via EntryResolver.</li>
+<li>Refactor: Moved writeJSON to util.go for better code organisation.</li>
+<li>Refactor: Introduced parsePositiveID helper and applied it across handlers.</li>
+<li>Refactor: Added postFormValue helper and applied it across handlers.</li>
+<li>Refactor: Eliminated duplicate weblog loads on list pages.</li>
+<li>Performance: Switched to bulk tag lookup in writeEntries.</li>
+<li>Performance: Computed prev/next navigation from a sorted slice instead of database queries.</li>
+<li>Performance: Enabled bulk comments retrieval with a shared templateCache.</li>
+<li>Performance: Optimised the top viewed entries query in SQL.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.14">Serene Bach v4.0.0-beta.14</a></p>
+]]></description>
+    </item>
+    <item>
+      <title>Serene Bach v4.0.0-beta.14 リリース</title>
+      <link>https://go.serenebach.net/news/entry/v400b014-ja/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b014-ja/</guid>
+      <pubDate>Fri, 22 May 2026 15:00:00 +0000</pubDate>
+      <category>お知らせ</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.14 をリリースしています。</p>
+<ul>
+<li>修正: アナリティクスおよび MCP OAuth プロキシにおける共有ステートの競合状態を解消しました</li>
+<li>修正: サイドバーのカテゴリ件数を公開済みエントリのみ対象に集計するよう修正しました</li>
+<li>修正: EntryResolver を通じてスラッグ形式のエントリビュー数がエントリに正しく紐づくよう修正しました</li>
+<li>リファクタリング: writeJSON を util.go へ移動し、コード構成を整理しました</li>
+<li>リファクタリング: parsePositiveID ヘルパーを導入し、各ハンドラに適用しました</li>
+<li>リファクタリング: postFormValue ヘルパーを追加し、各ハンドラに適用しました</li>
+<li>リファクタリング: 一覧ページでの重複した weblog 読み込みを排除しました</li>
+<li>パフォーマンス: writeEntries でタグをまとめて取得するよう変更しました</li>
+<li>パフォーマンス: 前後記事のナビゲーションをデータベースクエリからソート済みスライスの計算に置き換えました</li>
+<li>パフォーマンス: shared templateCache を活用してコメントをまとめて取得するよう改善しました</li>
+<li>パフォーマンス: 閲覧数上位エントリの取得クエリを SQL レベルで最適化しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.14">Serene Bach v4.0.0-beta.14</a></p>
+]]></description>
+    </item>
     <item>
       <title>Release Serene Bach v4.0.0-beta.13</title>
       <link>https://go.serenebach.net/news/entry/v400b013-en/</link>
@@ -314,38 +362,6 @@
 <li>機能追加: プロフィールページにもデザイン設定で指定したテンプレートが適用されるようにしました</li>
 </ul>
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.5">Serene Bach v4.0.0-beta.5</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Release Serene Bach v4.0.0-beta.4</title>
-      <link>https://go.serenebach.net/news/entry/v400b004-en/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b004-en/</guid>
-      <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
-      <category>Information</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.4 has been released.</p>
-<ul>
-<li>Bug Fix: Fixed an issue where a &quot;leave page&quot; confirmation dialog was incorrectly shown in the template &quot;save as&quot; dialog and the AI settings screen even when nothing had been edited.</li>
-<li>Documentation: Updated the Docker-related documentation and build flag descriptions.</li>
-<li>Documentation: Expanded the template reference in the help section and corrected the date format tokens.</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.4">Serene Bach v4.0.0-beta.4</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Serene Bach v4.0.0-beta.4 リリース</title>
-      <link>https://go.serenebach.net/news/entry/v400b004-ja/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b004-ja/</guid>
-      <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
-      <category>お知らせ</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.4 をリリースしています。</p>
-<ul>
-<li>不具合修正: テンプレートの別名保存ダイアログと AI 設定画面で、編集していないのに離脱確認ダイアログが表示されてしまう不具合を修正しました</li>
-<li>ドキュメント: Docker 関連のドキュメントとビルドフラグの記述を更新しました</li>
-<li>ドキュメント: ヘルプ内のテンプレートリファレンスを拡充し、日付フォーマットトークンの記述を修正しました</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.4">Serene Bach v4.0.0-beta.4</a></p>
 ]]></description>
     </item>
   </channel>
