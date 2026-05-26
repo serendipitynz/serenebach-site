@@ -5,9 +5,43 @@
     <link>https://go.serenebach.net/news/</link>
     <description>Serene Bach v4 Information</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 25 May 2026 20:46:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 21:45:29 +0000</lastBuildDate>
     <generator>serenebach</generator>
     <atom:link href="https://go.serenebach.net/news/rss.xml" rel="self" type="application/rss+xml; charset=utf-8"></atom:link>
+    <item>
+      <title>Release Serene Bach v4.0.0-beta.16</title>
+      <link>https://go.serenebach.net/news/entry/v400b016-en/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b016-en/</guid>
+      <pubDate>Mon, 25 May 2026 15:00:00 +0000</pubDate>
+      <category>Information</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.16 has been released.</p>
+<ul>
+<li>Feature: Added a backup CLI subcommand for creating consistent ZIP snapshots.</li>
+<li>Feature: Added automatic generation of sitemap.xml and robots.txt.</li>
+<li>Docs: Restructured the help sidebar order and split design and links pages.</li>
+<li>Refactor: Extracted shared helpers in the admin JavaScript module to remove duplication.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.16">Serene Bach v4.0.0-beta.16</a></p>
+]]></description>
+    </item>
+    <item>
+      <title>Serene Bach v4.0.0-beta.16 リリース</title>
+      <link>https://go.serenebach.net/news/entry/v400b016-ja/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b016-ja/</guid>
+      <pubDate>Mon, 25 May 2026 15:00:00 +0000</pubDate>
+      <category>お知らせ</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.16 をリリースしています。</p>
+<ul>
+<li>機能追加: ZIP スナップショットを作成するバックアップ CLI サブコマンドを追加しました</li>
+<li>機能追加: sitemap.xml および robots.txt の自動生成に対応しました</li>
+<li>ドキュメント: ヘルプのサイドバー順序を見直し、デザインページとリンクページを分割しました</li>
+<li>リファクタリング: 管理画面 JavaScript モジュールの共通ヘルパーを整理し、重複を解消しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.16">Serene Bach v4.0.0-beta.16</a></p>
+]]></description>
+    </item>
     <item>
       <title>Release Serene Bach v4.0.0-beta.15</title>
       <link>https://go.serenebach.net/news/entry/v400b015-en/</link>
@@ -322,44 +356,6 @@
 <li>不具合修正: 記事編集画面のピン留めチェックボックスのレイアウトと保存時の挙動を修正しました</li>
 </ul>
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.7">Serene Bach v4.0.0-beta.7</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Release Serene Bach v4.0.0-beta.6</title>
-      <link>https://go.serenebach.net/news/entry/v400b006-en/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b006-en/</guid>
-      <pubDate>Fri, 08 May 2026 12:00:00 +0000</pubDate>
-      <category>Information</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.6 has been released.</p>
-<ul>
-<li>New Feature: Added support for user-defined <code>{custom_xxx}</code> placeholders in sbtemplate.</li>
-<li>New Feature: Archive boundaries and entry dates are now anchored to a configurable timezone.</li>
-<li>New Feature: Added HTTP server timeouts and graceful shutdown.</li>
-<li>Security: Switched static file serving for <code>/img</code> and <code>/template</code> to <code>os.Root</code>, hardening it against directory traversal.</li>
-<li>Performance: Cached sbtemplate parse results to avoid re-parsing on every page render.</li>
-<li>Internal: Reorganized sbtemplate tag rendering so that HTML escaping is the default.</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.6">Serene Bach v4.0.0-beta.6</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Serene Bach v4.0.0-beta.6 リリース</title>
-      <link>https://go.serenebach.net/news/entry/v400b006-ja/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b006-ja/</guid>
-      <pubDate>Fri, 08 May 2026 12:00:00 +0000</pubDate>
-      <category>お知らせ</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.6 をリリースしています。</p>
-<ul>
-<li>機能追加: テンプレート内で利用できるユーザー定義プレースホルダ <code>{custom_xxx}</code> に対応しました</li>
-<li>機能追加: アーカイブの区切りや記事の日付を、設定したタイムゾーンに固定して扱うようにしました</li>
-<li>機能追加: HTTP サーバにタイムアウト設定とグレースフルシャットダウンを追加しました</li>
-<li>セキュリティ: 静的ファイル配信 (<code>/img</code>, <code>/template</code>) を <code>os.Root</code> ベースに変更し、ディレクトリトラバーサルに対して堅牢化しました</li>
-<li>性能改善: sbtemplate のパース結果をキャッシュし、ページ描画ごとの再パースを避けるようにしました</li>
-<li>内部改善: sbtemplate のタグ展開を整理し、HTML エスケープをデフォルト動作に変更しました</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.6">Serene Bach v4.0.0-beta.6</a></p>
 ]]></description>
     </item>
   </channel>
