@@ -5,9 +5,47 @@
     <link>https://go.serenebach.net/news/</link>
     <description>Serene Bach v4 Information</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 26 May 2026 21:45:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 11:45:26 +0000</lastBuildDate>
     <generator>serenebach</generator>
     <atom:link href="https://go.serenebach.net/news/rss.xml" rel="self" type="application/rss+xml; charset=utf-8"></atom:link>
+    <item>
+      <title>Release Serene Bach v4.0.0-beta.17</title>
+      <link>https://go.serenebach.net/news/entry/v400b017-en/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b017-en/</guid>
+      <pubDate>Tue, 26 May 2026 15:00:00 +0000</pubDate>
+      <category>Information</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.17 has been released.</p>
+<ul>
+<li>Refactor: Converted admin.js to ES modules and extracted core utilities, CSRF, modal, loading helpers, and per-page features into separate modules.</li>
+<li>Refactor: Extracted uploads, image-library, image-picker, Ace editor, and AI assist into dedicated modules.</li>
+<li>Feature: Added a shared modal for renaming image and library files.</li>
+<li>Feature: Added per-entry and per-page SEO metadata (excerpt, canonical URL, noindex option).</li>
+<li>Feature: Revealed admin form hints via (?) tooltips.</li>
+<li>Fix: Corrected library file-type icons and media preview display.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.17">Serene Bach v4.0.0-beta.17</a></p>
+]]></description>
+    </item>
+    <item>
+      <title>Serene Bach v4.0.0-beta.17 リリース</title>
+      <link>https://go.serenebach.net/news/entry/v400b017-ja/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b017-ja/</guid>
+      <pubDate>Tue, 26 May 2026 15:00:00 +0000</pubDate>
+      <category>お知らせ</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.17 をリリースしています。</p>
+<ul>
+<li>リファクタリング: admin.js を ES モジュールへ移行し、コアユーティリティ・CSRF・モーダル・ローディングヘルパー・各ページ機能を個別モジュールに分離しました</li>
+<li>リファクタリング: アップロード・画像ライブラリ・画像ピッカー・Ace エディタ・AI アシストを専用モジュールとして切り出しました</li>
+<li>機能追加: 画像およびライブラリファイルのリネーム操作に共通モーダルを導入しました</li>
+<li>機能追加: エントリおよびページに個別の SEO メタデータ（抜粋・正規 URL・noindex オプション）を設定できるようにしました</li>
+<li>機能追加: 管理画面フォームの入力ヒントを (?) ツールチップで確認できるようにしました</li>
+<li>修正: ライブラリのファイル種別アイコンとメディアプレビューの表示を修正しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.17">Serene Bach v4.0.0-beta.17</a></p>
+]]></description>
+    </item>
     <item>
       <title>Release Serene Bach v4.0.0-beta.16</title>
       <link>https://go.serenebach.net/news/entry/v400b016-en/</link>
@@ -322,40 +360,6 @@
 <li>開発: 複雑度の高い関数を多数分割し、可読性と保守性を高めました（gocyclo / gocognit / gocritic 等への対応）</li>
 </ul>
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.8">Serene Bach v4.0.0-beta.8</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Release Serene Bach v4.0.0-beta.7</title>
-      <link>https://go.serenebach.net/news/entry/v400b007-en/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b007-en/</guid>
-      <pubDate>Sat, 09 May 2026 12:00:00 +0000</pubDate>
-      <category>Information</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.7 has been released.</p>
-<ul>
-<li>New Feature: Added pinned entries, which float selected posts to the top of the home and category pages.</li>
-<li>New Feature: Comment acceptance can now be toggled per entry.</li>
-<li>Improvement: Improved the custom tag admin UX with a dynamic hint and a click-to-copy list.</li>
-<li>Bug Fix: Fixed the layout and save behavior of the pinned-entry checkbox in the entry editor.</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.7">Serene Bach v4.0.0-beta.7</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Serene Bach v4.0.0-beta.7 リリース</title>
-      <link>https://go.serenebach.net/news/entry/v400b007-ja/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b007-ja/</guid>
-      <pubDate>Sat, 09 May 2026 12:00:00 +0000</pubDate>
-      <category>お知らせ</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.7 をリリースしています。</p>
-<ul>
-<li>機能追加: 記事のピン留め機能を追加しました（選択した記事をトップページとカテゴリページの先頭に固定表示します）</li>
-<li>機能追加: 記事ごとにコメントの受付有無を切り替えられるようにしました</li>
-<li>改善: カスタムタグ管理画面の UX を改善しました（動的なヒント表示と、一覧クリックでのコピーに対応）</li>
-<li>不具合修正: 記事編集画面のピン留めチェックボックスのレイアウトと保存時の挙動を修正しました</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.7">Serene Bach v4.0.0-beta.7</a></p>
 ]]></description>
     </item>
   </channel>
