@@ -2,223 +2,235 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://go.serenebach.net/news/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/category/en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/category/ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b001-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b001-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b002-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b002-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b003-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b003-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b004-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b004-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b005-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b005-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b006-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b006-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b007-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b007-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b008-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b008-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b009-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b009-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b010-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b010-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b011-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b011-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b012-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b012-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b013-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b013-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b014-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b014-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b015-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b015-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b016-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b016-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b017-en/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://go.serenebach.net/news/entry/v400b017-ja/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://go.serenebach.net/news/entry/v400b018-en/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://go.serenebach.net/news/entry/v400b018-ja/</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

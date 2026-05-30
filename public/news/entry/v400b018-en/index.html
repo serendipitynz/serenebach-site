@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="https://go.serenebach.net/news/template/1/style.css">
-<title>Serene Bach News | Release Serene Bach v4.0.0-beta.13</title>
-<meta property="og:title" content="Serene Bach News | Release Serene Bach v4.0.0-beta.13">
+<title>Serene Bach News | Release Serene Bach v4.0.0-beta.18</title>
+<meta property="og:title" content="Serene Bach News | Release Serene Bach v4.0.0-beta.18">
 <meta property="og:description" content="Serene Bach v4 Information">
-<meta property="og:image" content="https://go.serenebach.net/news/img/og/25.png">
+<meta property="og:image" content="https://go.serenebach.net/news/img/og/35.png">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -40,19 +40,16 @@
 
     <article class="entry">
       <div>
-        <p class="eyebrow">Information on 2026-05-22</p>
-        <h2><a href="https://go.serenebach.net/news/entry/v400b013-en/"><img src="https://go.serenebach.net/news/img/og/25.png" alt="Release Serene Bach v4.0.0-beta.13"></a></h2>
+        <p class="eyebrow">Information on 2026-05-30</p>
+        <h2><a href="https://go.serenebach.net/news/entry/v400b018-en/"><img src="https://go.serenebach.net/news/img/og/35.png" alt="Release Serene Bach v4.0.0-beta.18"></a></h2>
       </div>
-      <div class="entry_body"><p>Serene Bach v4.0.0-beta.13 has been released.</p>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.18 has been released.</p>
 <ul>
-<li>Security: Hardened the MCP OAuth proxy startup in production to prevent unsafe initialisation paths (SAST-001).</li>
-<li>Security: Capped multipart body parsing in CSRF middleware before authentication to limit pre-auth attack surface (SAST-002).</li>
-<li>Improvement: Laid the foundation for server-side pagination, search, and sorting across admin list views.</li>
-<li>Improvement: Applied server-side pagination, search, and sorting to the Entries list in the admin panel.</li>
-<li>Improvement: Rolled out pagination, search, and sorting to the Pages and Comments admin lists.</li>
-<li>Improvement: Added sortable column headers to the Tags, MCP Tokens, and Webhooks admin lists.</li>
+<li>Feature: Added full-text entry search powered by the SQLite FTS5 trigram tokenizer.</li>
+<li>Feature: Implemented a <code>selected_entry</code> block and <code>{selected_entry_list}</code> tag in the template engine.</li>
+<li>Docs: Bundled the Noto Sans JP OFL license and documented third-party licenses.</li>
 </ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.13">Serene Bach v4.0.0-beta.13</a></p>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.18">Serene Bach v4.0.0-beta.18</a></p>
 </div>
     </article>
   </main>

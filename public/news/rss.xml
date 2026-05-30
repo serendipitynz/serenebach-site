@@ -5,9 +5,41 @@
     <link>https://go.serenebach.net/news/</link>
     <description>Serene Bach v4 Information</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 27 May 2026 11:45:26 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 11:37:26 +0000</lastBuildDate>
     <generator>serenebach</generator>
     <atom:link href="https://go.serenebach.net/news/rss.xml" rel="self" type="application/rss+xml; charset=utf-8"></atom:link>
+    <item>
+      <title>Release Serene Bach v4.0.0-beta.18</title>
+      <link>https://go.serenebach.net/news/entry/v400b018-en/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b018-en/</guid>
+      <pubDate>Fri, 29 May 2026 15:00:00 +0000</pubDate>
+      <category>Information</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.18 has been released.</p>
+<ul>
+<li>Feature: Added full-text entry search powered by the SQLite FTS5 trigram tokenizer.</li>
+<li>Feature: Implemented a <code>selected_entry</code> block and <code>{selected_entry_list}</code> tag in the template engine.</li>
+<li>Docs: Bundled the Noto Sans JP OFL license and documented third-party licenses.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.18">Serene Bach v4.0.0-beta.18</a></p>
+]]></description>
+    </item>
+    <item>
+      <title>Serene Bach v4.0.0-beta.18 リリース</title>
+      <link>https://go.serenebach.net/news/entry/v400b018-ja/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b018-ja/</guid>
+      <pubDate>Fri, 29 May 2026 15:00:00 +0000</pubDate>
+      <category>お知らせ</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.18 をリリースしています。</p>
+<ul>
+<li>機能追加: SQLite FTS5 トライグラムトークナイザーによるエントリの全文検索を追加しました</li>
+<li>機能追加: テンプレートエンジンに <code>selected_entry</code> ブロックと <code>{selected_entry_list}</code> タグを実装しました</li>
+<li>ドキュメント: Noto Sans JP の OFL ライセンスを同梱し、サードパーティライセンスを明文化しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.18">Serene Bach v4.0.0-beta.18</a></p>
+]]></description>
+    </item>
     <item>
       <title>Release Serene Bach v4.0.0-beta.17</title>
       <link>https://go.serenebach.net/news/entry/v400b017-en/</link>
@@ -328,38 +360,6 @@
 <li>不具合修正: サイドバーのインライン日付（最新記事・最新コメント）に一覧用の日付フォーマット (DateFormatList) が適用されるようにしました（SB3 と同等の挙動）</li>
 </ul>
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.9">Serene Bach v4.0.0-beta.9</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Release Serene Bach v4.0.0-beta.8</title>
-      <link>https://go.serenebach.net/news/entry/v400b008-en/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b008-en/</guid>
-      <pubDate>Wed, 13 May 2026 12:00:00 +0000</pubDate>
-      <category>Information</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.8 has been released.</p>
-<ul>
-<li>Bug Fix: The AI compose screen (<code>/admin/ai/compose</code>) now respects the display locale configured for the admin panel.</li>
-<li>Development: Introduced golangci-lint and gradually enabled multiple linters to clean up the codebase.</li>
-<li>Development: Split many high-complexity functions to improve readability and maintainability (gocyclo / gocognit / gocritic).</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.8">Serene Bach v4.0.0-beta.8</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Serene Bach v4.0.0-beta.8 リリース</title>
-      <link>https://go.serenebach.net/news/entry/v400b008-ja/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b008-ja/</guid>
-      <pubDate>Wed, 13 May 2026 12:00:00 +0000</pubDate>
-      <category>お知らせ</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.8 をリリースしています。</p>
-<ul>
-<li>不具合修正: AI 作文画面 (<code>/admin/ai/compose</code>) が管理画面の表示言語設定に従って動作するようにしました</li>
-<li>開発: golangci-lint を導入し、複数のリンタを段階的に有効化してコードベース全体を整備しました</li>
-<li>開発: 複雑度の高い関数を多数分割し、可読性と保守性を高めました（gocyclo / gocognit / gocritic 等への対応）</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.8">Serene Bach v4.0.0-beta.8</a></p>
 ]]></description>
     </item>
   </channel>
