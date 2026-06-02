@@ -5,9 +5,41 @@
     <link>https://go.serenebach.net/news/</link>
     <description>Serene Bach v4 Information</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 30 May 2026 11:37:26 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 22:38:17 +0000</lastBuildDate>
     <generator>serenebach</generator>
     <atom:link href="https://go.serenebach.net/news/rss.xml" rel="self" type="application/rss+xml; charset=utf-8"></atom:link>
+    <item>
+      <title>Release Serene Bach v4.0.0-beta.19</title>
+      <link>https://go.serenebach.net/news/entry/v400b019-en/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b019-en/</guid>
+      <pubDate>Tue, 02 Jun 2026 15:00:00 +0000</pubDate>
+      <category>Information</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.19 has been released.</p>
+<ul>
+<li>Feature: Added a search UI to the default template.</li>
+<li>Templates: Applied the same update to the templates distributed on go.serenebach.net, adding search forms and per-entry SEO meta blocks to the default family and the monochrome template.</li>
+<li>Other: Bumped the GitHub Actions runners to the Node.js 24 runtimes.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.19">Serene Bach v4.0.0-beta.19</a></p>
+]]></description>
+    </item>
+    <item>
+      <title>Serene Bach v4.0.0-beta.19 リリース</title>
+      <link>https://go.serenebach.net/news/entry/v400b019-ja/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b019-ja/</guid>
+      <pubDate>Tue, 02 Jun 2026 15:00:00 +0000</pubDate>
+      <category>お知らせ</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.19 をリリースしています。</p>
+<ul>
+<li>機能追加: デフォルトテンプレートに検索 UI を追加しました</li>
+<li>テンプレート: go.serenebach.net で配布しているテンプレートにも同じ変更を適用し、default 系および monochrome テンプレートに検索フォームとエントリ別 SEO メタブロックを追加しました</li>
+<li>その他: GitHub Actions のランタイムを Node.js 24 に更新しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.19">Serene Bach v4.0.0-beta.19</a></p>
+]]></description>
+    </item>
     <item>
       <title>Release Serene Bach v4.0.0-beta.18</title>
       <link>https://go.serenebach.net/news/entry/v400b018-en/</link>
@@ -324,42 +356,6 @@
 <li>機能追加: 記事・コメント・画像のイベントに対する Outbound Webhooks（送信側 Webhook）に対応しました</li>
 </ul>
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.10">Serene Bach v4.0.0-beta.10</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Release Serene Bach v4.0.0-beta.9</title>
-      <link>https://go.serenebach.net/news/entry/v400b009-en/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b009-en/</guid>
-      <pubDate>Thu, 14 May 2026 12:00:00 +0000</pubDate>
-      <category>Information</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.9 has been released.</p>
-<ul>
-<li>New Feature: Category URLs and snapshot paths now use the category slug.</li>
-<li>New Feature: Categories can now be marked as hidden, useful for keeping archives without showing them in the main timeline.</li>
-<li>Bug Fix: Honor SB3's per-category entry template priority.</li>
-<li>Bug Fix: <code>{entry_date}</code> on list pages now follows the entry date format (DateFormatEntry).</li>
-<li>Bug Fix: Inline dates in the sidebar (latest entries and latest comments) now follow the list date format (DateFormatList), matching SB3 behavior.</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.9">Serene Bach v4.0.0-beta.9</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Serene Bach v4.0.0-beta.9 リリース</title>
-      <link>https://go.serenebach.net/news/entry/v400b009-ja/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b009-ja/</guid>
-      <pubDate>Thu, 14 May 2026 12:00:00 +0000</pubDate>
-      <category>お知らせ</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.9 をリリースしています。</p>
-<ul>
-<li>機能追加: カテゴリの URL とスナップショットのパスにカテゴリ slug を使うようになりました</li>
-<li>機能追加: カテゴリに「非表示」設定を追加しました（一覧などのタイムラインから外して、アーカイブとして保持したい場合に利用できます）</li>
-<li>不具合修正: SB3 のカテゴリ別エントリテンプレートの優先順位を尊重するように修正しました</li>
-<li>不具合修正: 一覧ページでの <code>{entry_date}</code> がエントリ用の日付フォーマット (DateFormatEntry) に従うように修正しました</li>
-<li>不具合修正: サイドバーのインライン日付（最新記事・最新コメント）に一覧用の日付フォーマット (DateFormatList) が適用されるようにしました（SB3 と同等の挙動）</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.9">Serene Bach v4.0.0-beta.9</a></p>
 ]]></description>
     </item>
   </channel>
