@@ -5,9 +5,41 @@
     <link>https://go.serenebach.net/news/</link>
     <description>Serene Bach v4 Information</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 02 Jun 2026 22:38:17 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 10:58:23 +0000</lastBuildDate>
     <generator>serenebach</generator>
     <atom:link href="https://go.serenebach.net/news/rss.xml" rel="self" type="application/rss+xml; charset=utf-8"></atom:link>
+    <item>
+      <title>Release Serene Bach v4.0.0-beta.20</title>
+      <link>https://go.serenebach.net/news/entry/v400b020-en/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b020-en/</guid>
+      <pubDate>Sun, 28 Jun 2026 15:00:00 +0000</pubDate>
+      <category>Information</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.20 has been released.</p>
+<ul>
+<li>Feature: Added the ability to preview template assets in a modal window from the editor.</li>
+<li>Improvement: Reduced the complexity of the image-upload code and added a gocyclo lint check to CI.</li>
+<li>Docs: Updated the admin navigation and related documentation to clarify where template imports live.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.20">Serene Bach v4.0.0-beta.20</a></p>
+]]></description>
+    </item>
+    <item>
+      <title>Serene Bach v4.0.0-beta.20 リリース</title>
+      <link>https://go.serenebach.net/news/entry/v400b020-ja/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b020-ja/</guid>
+      <pubDate>Sun, 28 Jun 2026 15:00:00 +0000</pubDate>
+      <category>お知らせ</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.20 をリリースしています。</p>
+<ul>
+<li>機能追加: エディタからテンプレートアセットをモーダルウィンドウでプレビューできるようにしました</li>
+<li>改善: 画像アップロード処理の複雑度を下げ、CI に gocyclo の lint チェックを追加しました</li>
+<li>ドキュメント: テンプレートインポートの場所が分かりやすくなるよう、管理画面のナビゲーションと関連ドキュメントを更新しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.20">Serene Bach v4.0.0-beta.20</a></p>
+]]></description>
+    </item>
     <item>
       <title>Release Serene Bach v4.0.0-beta.19</title>
       <link>https://go.serenebach.net/news/entry/v400b019-en/</link>
@@ -328,34 +360,6 @@
 <li>不具合修正: AI プロバイダ選択ラベルが英語のままだった箇所を多言語化しました</li>
 </ul>
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.11">Serene Bach v4.0.0-beta.11</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Release Serene Bach v4.0.0-beta.10</title>
-      <link>https://go.serenebach.net/news/entry/v400b010-en/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b010-en/</guid>
-      <pubDate>Fri, 15 May 2026 12:00:00 +0000</pubDate>
-      <category>Information</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.10 has been released.</p>
-<ul>
-<li>New Feature: Added outbound webhooks for entry, comment, and image events.</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.10">Serene Bach v4.0.0-beta.10</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Serene Bach v4.0.0-beta.10 リリース</title>
-      <link>https://go.serenebach.net/news/entry/v400b010-ja/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b010-ja/</guid>
-      <pubDate>Fri, 15 May 2026 12:00:00 +0000</pubDate>
-      <category>お知らせ</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.10 をリリースしています。</p>
-<ul>
-<li>機能追加: 記事・コメント・画像のイベントに対する Outbound Webhooks（送信側 Webhook）に対応しました</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.10">Serene Bach v4.0.0-beta.10</a></p>
 ]]></description>
     </item>
   </channel>
