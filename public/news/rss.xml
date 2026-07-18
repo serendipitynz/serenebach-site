@@ -5,9 +5,43 @@
     <link>https://go.serenebach.net/news/</link>
     <description>Serene Bach v4 Information</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 29 Jun 2026 10:58:23 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 02:22:02 +0000</lastBuildDate>
     <generator>serenebach</generator>
     <atom:link href="https://go.serenebach.net/news/rss.xml" rel="self" type="application/rss+xml; charset=utf-8"></atom:link>
+    <item>
+      <title>Release Serene Bach v4.0.0-beta.21</title>
+      <link>https://go.serenebach.net/news/entry/v400b021-en/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b021-en/</guid>
+      <pubDate>Fri, 17 Jul 2026 15:00:00 +0000</pubDate>
+      <category>Information</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.21 has been released.</p>
+<ul>
+<li>Fix: Hardened the full-text search (FTS5) startup probe and Open Graph card regeneration.</li>
+<li>Fix: Preserved the correct parent-child relationship when importing from SB2 / SB3 even when the parent is category 0.</li>
+<li>Docs: Added a non-technical migration guide for moving from SB2.</li>
+<li>Development: Strengthened tests for configuration, character encoding, boundary conditions, and SB3 template compatibility, and tidied up the developer documentation and contribution conventions.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.21">Serene Bach v4.0.0-beta.21</a></p>
+]]></description>
+    </item>
+    <item>
+      <title>Serene Bach v4.0.0-beta.21 リリース</title>
+      <link>https://go.serenebach.net/news/entry/v400b021-ja/</link>
+      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b021-ja/</guid>
+      <pubDate>Fri, 17 Jul 2026 15:00:00 +0000</pubDate>
+      <category>お知らせ</category>
+      <dc:creator>admin</dc:creator>
+      <description><![CDATA[<p>Serene Bach v4.0.0-beta.21 をリリースしています。</p>
+<ul>
+<li>不具合修正: 全文検索（FTS5）の起動時チェックと OGP カードの再生成処理を堅牢化しました</li>
+<li>不具合修正: SB2 / SB3 からのインポート時に、親が「カテゴリ0」のカテゴリでも親子関係を正しく保持するようにしました</li>
+<li>ドキュメント: 技術者以外の方向けの SB2 移行ガイドを追加しました</li>
+<li>開発: 設定・文字コード・境界値・SB3 テンプレート互換性のテストを強化し、開発者向けドキュメントとコントリビューション規約を整理しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.21">Serene Bach v4.0.0-beta.21</a></p>
+]]></description>
+    </item>
     <item>
       <title>Release Serene Bach v4.0.0-beta.20</title>
       <link>https://go.serenebach.net/news/entry/v400b020-en/</link>
@@ -322,44 +356,6 @@
 <li>改善: タイトル・タグ・キーワードなど短文生成アクションの <code>max_tokens</code> 上限を 200 から 2048 に引き上げました。Thinking モデル使用時に出力が途中で切れる問題に対応したものです</li>
 </ul>
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.12">Serene Bach v4.0.0-beta.12</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Release Serene Bach v4.0.0-beta.11</title>
-      <link>https://go.serenebach.net/news/entry/v400b011-en/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b011-en/</guid>
-      <pubDate>Sat, 16 May 2026 12:00:00 +0000</pubDate>
-      <category>Information</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.11 has been released.</p>
-<ul>
-<li>New Feature: Added a <code>--version</code> flag to the serenebach CLI.</li>
-<li>New Feature: Templates can now be renamed from an inline modal on the template edit screen.</li>
-<li>New Feature: Template import now supports drag-and-drop file selection.</li>
-<li>Improvement: Renamed the admin &quot;Design Settings&quot; menu to &quot;Design&quot;.</li>
-<li>Bug Fix: The settings tabbar is now shown on Webhooks pages.</li>
-<li>Bug Fix: Localized AI provider option labels that were left in English.</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.11">Serene Bach v4.0.0-beta.11</a></p>
-]]></description>
-    </item>
-    <item>
-      <title>Serene Bach v4.0.0-beta.11 リリース</title>
-      <link>https://go.serenebach.net/news/entry/v400b011-ja/</link>
-      <guid isPermaLink="true">https://go.serenebach.net/news/entry/v400b011-ja/</guid>
-      <pubDate>Sat, 16 May 2026 12:00:00 +0000</pubDate>
-      <category>お知らせ</category>
-      <dc:creator>admin</dc:creator>
-      <description><![CDATA[<p>Serene Bach v4.0.0-beta.11 をリリースしています。</p>
-<ul>
-<li>機能追加: CLI に <code>--version</code> フラグを追加しました</li>
-<li>機能追加: テンプレート編集画面からインラインモーダルでテンプレート名をリネームできるようになりました</li>
-<li>機能追加: テンプレートインポートでドラッグ＆ドロップによるファイル選択に対応しました</li>
-<li>改善: 管理画面の「デザイン設定」メニューを「デザイン」にリネームしました</li>
-<li>不具合修正: Webhooks ページで設定タブバーが表示されない問題を修正しました</li>
-<li>不具合修正: AI プロバイダ選択ラベルが英語のままだった箇所を多言語化しました</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.11">Serene Bach v4.0.0-beta.11</a></p>
 ]]></description>
     </item>
   </channel>
