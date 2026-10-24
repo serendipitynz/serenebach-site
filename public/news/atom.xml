@@ -5,14 +5,54 @@
   <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/"></link>
   <link rel="self" type="application/atom+xml; charset=utf-8" href="https://go.serenebach.net/news/atom.xml"></link>
   <id>https://go.serenebach.net/news/</id>
-  <updated>2026-10-16T22:17:28Z</updated>
+  <updated>2026-10-24T21:52:04Z</updated>
   <generator>serenebach</generator>
+  <entry>
+    <title>Release Serene Bach v4.0.0-beta.24</title>
+    <id>https://go.serenebach.net/news/entry/v400b024-en/</id>
+    <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b024-en/"></link>
+    <published>2026-10-24T15:00:00Z</published>
+    <updated>2026-10-24T21:52:04Z</updated>
+    <author>
+      <name>admin</name>
+    </author>
+    <category term="Information"></category>
+    <content type="html"><![CDATA[<p>Serene Bach v4.0.0-beta.24 has been released.</p>
+<ul>
+<li>Fix: When the data disk is full, failed uploads no longer leave partially written images or thumbnails behind. Logging out no longer bounces you back to the dashboard, and if the server cannot revoke the session, the login page now warns you to check the free space on the data disk.</li>
+<li>Development: Moved to Go 1.27.3 and pinned release builds to it.</li>
+<li>Development: Updated the golang.org/x/image dependency to v0.45.0.</li>
+<li>Development: Updated the modernc.org/sqlite, chi, and golang.org/x dependencies.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.24">Serene Bach v4.0.0-beta.24</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Serene Bach v4.0.0-beta.24 リリース</title>
+    <id>https://go.serenebach.net/news/entry/v400b024-ja/</id>
+    <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b024-ja/"></link>
+    <published>2026-10-24T15:00:00Z</published>
+    <updated>2026-10-24T21:52:04Z</updated>
+    <author>
+      <name>admin</name>
+    </author>
+    <category term="お知らせ"></category>
+    <content type="html"><![CDATA[<p>Serene Bach v4.0.0-beta.24 をリリースしています。</p>
+<ul>
+<li>不具合修正: データ用ディスクが満杯のとき、アップロードに失敗した画像やサムネイルが書きかけのまま残らないようにしました。また、ログアウトできずに管理画面へ戻されていた問題を修正し、サーバー側のセッションを無効にできなかった場合はログイン画面にディスクの空き容量を確認するよう警告を表示するようにしました</li>
+<li>開発: Go 1.27.3 に移行し、リリースビルドもこのバージョンで固定しました</li>
+<li>開発: 依存ライブラリの golang.org/x/image を v0.45.0 に更新しました</li>
+<li>開発: 依存ライブラリの modernc.org/sqlite、chi、golang.org/x 系モジュールを更新しました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.24">Serene Bach v4.0.0-beta.24</a></p>
+]]></content>
+  </entry>
   <entry>
     <title>Release Serene Bach v4.0.0-beta.23</title>
     <id>https://go.serenebach.net/news/entry/v400b023-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b023-en/"></link>
     <published>2026-10-16T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -34,7 +74,7 @@
     <id>https://go.serenebach.net/news/entry/v400b023-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b023-ja/"></link>
     <published>2026-10-16T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -56,7 +96,7 @@
     <id>https://go.serenebach.net/news/entry/v400b022-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b022-en/"></link>
     <published>2026-08-14T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -74,7 +114,7 @@
     <id>https://go.serenebach.net/news/entry/v400b022-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b022-ja/"></link>
     <published>2026-08-14T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -92,7 +132,7 @@
     <id>https://go.serenebach.net/news/entry/v400b021-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b021-en/"></link>
     <published>2026-07-17T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -112,7 +152,7 @@
     <id>https://go.serenebach.net/news/entry/v400b021-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b021-ja/"></link>
     <published>2026-07-17T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -132,7 +172,7 @@
     <id>https://go.serenebach.net/news/entry/v400b020-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b020-en/"></link>
     <published>2026-06-28T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -151,7 +191,7 @@
     <id>https://go.serenebach.net/news/entry/v400b020-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b020-ja/"></link>
     <published>2026-06-28T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -170,7 +210,7 @@
     <id>https://go.serenebach.net/news/entry/v400b019-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b019-en/"></link>
     <published>2026-06-02T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -189,7 +229,7 @@
     <id>https://go.serenebach.net/news/entry/v400b019-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b019-ja/"></link>
     <published>2026-06-02T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -208,7 +248,7 @@
     <id>https://go.serenebach.net/news/entry/v400b018-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b018-en/"></link>
     <published>2026-05-29T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -227,7 +267,7 @@
     <id>https://go.serenebach.net/news/entry/v400b018-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b018-ja/"></link>
     <published>2026-05-29T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -246,7 +286,7 @@
     <id>https://go.serenebach.net/news/entry/v400b017-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b017-en/"></link>
     <published>2026-05-26T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -268,7 +308,7 @@
     <id>https://go.serenebach.net/news/entry/v400b017-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b017-ja/"></link>
     <published>2026-05-26T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -290,7 +330,7 @@
     <id>https://go.serenebach.net/news/entry/v400b016-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b016-en/"></link>
     <published>2026-05-25T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -310,7 +350,7 @@
     <id>https://go.serenebach.net/news/entry/v400b016-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b016-ja/"></link>
     <published>2026-05-25T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -330,7 +370,7 @@
     <id>https://go.serenebach.net/news/entry/v400b015-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b015-en/"></link>
     <published>2026-05-24T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -348,7 +388,7 @@
     <id>https://go.serenebach.net/news/entry/v400b015-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b015-ja/"></link>
     <published>2026-05-24T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
+    <updated>2026-10-24T21:52:04Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -359,60 +399,6 @@
 <li>機能追加: ファイルライブラリで音声・ドキュメント・動画ファイルをサポートしました</li>
 </ul>
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.15">Serene Bach v4.0.0-beta.15</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Release Serene Bach v4.0.0-beta.14</title>
-    <id>https://go.serenebach.net/news/entry/v400b014-en/</id>
-    <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b014-en/"></link>
-    <published>2026-05-22T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
-    <author>
-      <name>admin</name>
-    </author>
-    <category term="Information"></category>
-    <content type="html"><![CDATA[<p>Serene Bach v4.0.0-beta.14 has been released.</p>
-<ul>
-<li>Fix: Resolved shared state race conditions in analytics and the MCP OAuth proxy.</li>
-<li>Fix: Corrected bulk category counts to include published entries only in the sidebar.</li>
-<li>Fix: Attributed slug-based entry views to entries via EntryResolver.</li>
-<li>Refactor: Moved writeJSON to util.go for better code organisation.</li>
-<li>Refactor: Introduced parsePositiveID helper and applied it across handlers.</li>
-<li>Refactor: Added postFormValue helper and applied it across handlers.</li>
-<li>Refactor: Eliminated duplicate weblog loads on list pages.</li>
-<li>Performance: Switched to bulk tag lookup in writeEntries.</li>
-<li>Performance: Computed prev/next navigation from a sorted slice instead of database queries.</li>
-<li>Performance: Enabled bulk comments retrieval with a shared templateCache.</li>
-<li>Performance: Optimised the top viewed entries query in SQL.</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.14">Serene Bach v4.0.0-beta.14</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Serene Bach v4.0.0-beta.14 リリース</title>
-    <id>https://go.serenebach.net/news/entry/v400b014-ja/</id>
-    <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b014-ja/"></link>
-    <published>2026-05-22T15:00:00Z</published>
-    <updated>2026-10-16T22:17:28Z</updated>
-    <author>
-      <name>admin</name>
-    </author>
-    <category term="お知らせ"></category>
-    <content type="html"><![CDATA[<p>Serene Bach v4.0.0-beta.14 をリリースしています。</p>
-<ul>
-<li>修正: アナリティクスおよび MCP OAuth プロキシにおける共有ステートの競合状態を解消しました</li>
-<li>修正: サイドバーのカテゴリ件数を公開済みエントリのみ対象に集計するよう修正しました</li>
-<li>修正: EntryResolver を通じてスラッグ形式のエントリビュー数がエントリに正しく紐づくよう修正しました</li>
-<li>リファクタリング: writeJSON を util.go へ移動し、コード構成を整理しました</li>
-<li>リファクタリング: parsePositiveID ヘルパーを導入し、各ハンドラに適用しました</li>
-<li>リファクタリング: postFormValue ヘルパーを追加し、各ハンドラに適用しました</li>
-<li>リファクタリング: 一覧ページでの重複した weblog 読み込みを排除しました</li>
-<li>パフォーマンス: writeEntries でタグをまとめて取得するよう変更しました</li>
-<li>パフォーマンス: 前後記事のナビゲーションをデータベースクエリからソート済みスライスの計算に置き換えました</li>
-<li>パフォーマンス: shared templateCache を活用してコメントをまとめて取得するよう改善しました</li>
-<li>パフォーマンス: 閲覧数上位エントリの取得クエリを SQL レベルで最適化しました</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.14">Serene Bach v4.0.0-beta.14</a></p>
 ]]></content>
   </entry>
 </feed>

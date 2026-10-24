@@ -32,6 +32,22 @@
     </nav>
   </header>
   <main>
+<a id="mark47"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information on 2026-10-25</p>
+        <h2><a href="https://go.serenebach.net/news/entry/v400b024-en/"><img src="https://go.serenebach.net/news/img/og/47.png" alt="Release Serene Bach v4.0.0-beta.24"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.24 has been released.</p>
+<ul>
+<li>Fix: When the data disk is full, failed uploads no longer leave partially written images or thumbnails behind. Logging out no longer bounces you back to the dashboard, and if the server cannot revoke the session, the login page now warns you to check the free space on the data disk.</li>
+<li>Development: Moved to Go 1.27.3 and pinned release builds to it.</li>
+<li>Development: Updated the golang.org/x/image dependency to v0.45.0.</li>
+<li>Development: Updated the modernc.org/sqlite, chi, and golang.org/x dependencies.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.24">Serene Bach v4.0.0-beta.24</a></p>
+</div>
+    </article>
 <a id="mark45"></a>
     <article class="entry">
       <div>
@@ -171,29 +187,6 @@
 <li>Feature: The file library now supports audio, document, and movie files.</li>
 </ul>
 <p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.15">Serene Bach v4.0.0-beta.15</a></p>
-</div>
-    </article>
-<a id="mark27"></a>
-    <article class="entry">
-      <div>
-        <p class="eyebrow">Information on 2026-05-23</p>
-        <h2><a href="https://go.serenebach.net/news/entry/v400b014-en/"><img src="https://go.serenebach.net/news/img/og/27.png" alt="Release Serene Bach v4.0.0-beta.14"></a></h2>
-      </div>
-      <div class="entry_body"><p>Serene Bach v4.0.0-beta.14 has been released.</p>
-<ul>
-<li>Fix: Resolved shared state race conditions in analytics and the MCP OAuth proxy.</li>
-<li>Fix: Corrected bulk category counts to include published entries only in the sidebar.</li>
-<li>Fix: Attributed slug-based entry views to entries via EntryResolver.</li>
-<li>Refactor: Moved writeJSON to util.go for better code organisation.</li>
-<li>Refactor: Introduced parsePositiveID helper and applied it across handlers.</li>
-<li>Refactor: Added postFormValue helper and applied it across handlers.</li>
-<li>Refactor: Eliminated duplicate weblog loads on list pages.</li>
-<li>Performance: Switched to bulk tag lookup in writeEntries.</li>
-<li>Performance: Computed prev/next navigation from a sorted slice instead of database queries.</li>
-<li>Performance: Enabled bulk comments retrieval with a shared templateCache.</li>
-<li>Performance: Optimised the top viewed entries query in SQL.</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.14">Serene Bach v4.0.0-beta.14</a></p>
 </div>
     </article>
   </main>
