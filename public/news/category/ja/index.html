@@ -32,6 +32,24 @@
     </nav>
   </header>
   <main>
+<a id="mark50"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">お知らせ on 2026-10-26</p>
+        <h2><a href="https://go.serenebach.net/news/entry/v400b025-ja/"><img src="https://go.serenebach.net/news/img/og/50.png" alt="Serene Bach v4.0.0-beta.25 リリース"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.25 をリリースしています。</p>
+<ul>
+<li>開発: 配布している全プラットフォーム向けに、依存ライブラリの既知の脆弱性を govulncheck で検査する CI を追加しました</li>
+<li>セキュリティ: 画像をデコードする前に寸法を確認し、ヘッダで極端に大きな寸法を宣言した画像でメモリを使い果たさないようにしました（一辺 20000px または総画素数 5000 万画素まで）</li>
+<li>セキュリティ: パスワードを変更すると、そのユーザーの既存のセッションをすべて無効にするようにしました。自分のパスワードを変更した場合も、今のブラウザにはあらためてログイン状態を発行します</li>
+<li>セキュリティ: セッションを Cookie の値そのものではなくハッシュ値で保存するようにし、データベースやバックアップが漏れてもログインに使われないようにしました。この更新を適用すると、全ユーザーが一度ログアウトされます</li>
+<li>セキュリティ: 管理ユーザー以外が設定した AI の接続先から、サーバー内部やローカルネットワークのアドレスへ接続できないようにしました。管理ユーザーはこれまでどおりローカルの LLM を使えます</li>
+<li>セキュリティ: ログイン失敗の記録をデータベースに保存するようにし、CGI で動かしている場合もパスワードの総当たり対策が働くようにしました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.25">Serene Bach v4.0.0-beta.25</a></p>
+</div>
+    </article>
 <a id="mark48"></a>
     <article class="entry">
       <div>
@@ -173,20 +191,6 @@
 <li>リファクタリング: 管理画面 JavaScript モジュールの共通ヘルパーを整理し、重複を解消しました</li>
 </ul>
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.16">Serene Bach v4.0.0-beta.16</a></p>
-</div>
-    </article>
-<a id="mark30"></a>
-    <article class="entry">
-      <div>
-        <p class="eyebrow">お知らせ on 2026-05-25</p>
-        <h2><a href="https://go.serenebach.net/news/entry/v400b015-ja/"><img src="https://go.serenebach.net/news/img/og/30.png" alt="Serene Bach v4.0.0-beta.15 リリース"></a></h2>
-      </div>
-      <div class="entry_body"><p>Serene Bach v4.0.0-beta.15 をリリースしています。</p>
-<ul>
-<li>機能追加: テンプレートアセットで JavaScript ファイルおよびウェブフォントを受け付けるようにしました</li>
-<li>機能追加: ファイルライブラリで音声・ドキュメント・動画ファイルをサポートしました</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.15">Serene Bach v4.0.0-beta.15</a></p>
 </div>
     </article>
   </main>

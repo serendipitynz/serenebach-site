@@ -5,14 +5,58 @@
   <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/"></link>
   <link rel="self" type="application/atom+xml; charset=utf-8" href="https://go.serenebach.net/news/atom.xml"></link>
   <id>https://go.serenebach.net/news/</id>
-  <updated>2026-10-24T21:52:04Z</updated>
+  <updated>2026-10-25T19:26:08Z</updated>
   <generator>serenebach</generator>
+  <entry>
+    <title>Release Serene Bach v4.0.0-beta.25</title>
+    <id>https://go.serenebach.net/news/entry/v400b025-en/</id>
+    <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b025-en/"></link>
+    <published>2026-10-25T15:00:00Z</published>
+    <updated>2026-10-25T19:26:08Z</updated>
+    <author>
+      <name>admin</name>
+    </author>
+    <category term="Information"></category>
+    <content type="html"><![CDATA[<p>Serene Bach v4.0.0-beta.25 has been released.</p>
+<ul>
+<li>Development: Added a CI check that scans dependencies for known vulnerabilities with govulncheck across every released platform.</li>
+<li>Security: Image dimensions are now checked before decoding, so an image whose header declares huge dimensions can no longer exhaust memory (limits: 20000 px per side or 50 million pixels in total).</li>
+<li>Security: Changing a password now signs that user out of every existing session. When you change your own password, your current browser is signed in again with a fresh session.</li>
+<li>Security: Sessions are now stored as hashes rather than the cookie values themselves, so a leaked database or backup cannot be used to sign in. Upgrading signs every user out once.</li>
+<li>Security: AI endpoints configured by non-admin users can no longer reach internal or local network addresses from the server. Admins can still use local LLMs as before.</li>
+<li>Security: Login failures are now recorded in the database, so the brute-force protection on the login page also works when running under CGI.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.25">Serene Bach v4.0.0-beta.25</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Serene Bach v4.0.0-beta.25 リリース</title>
+    <id>https://go.serenebach.net/news/entry/v400b025-ja/</id>
+    <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b025-ja/"></link>
+    <published>2026-10-25T15:00:00Z</published>
+    <updated>2026-10-25T19:26:08Z</updated>
+    <author>
+      <name>admin</name>
+    </author>
+    <category term="お知らせ"></category>
+    <content type="html"><![CDATA[<p>Serene Bach v4.0.0-beta.25 をリリースしています。</p>
+<ul>
+<li>開発: 配布している全プラットフォーム向けに、依存ライブラリの既知の脆弱性を govulncheck で検査する CI を追加しました</li>
+<li>セキュリティ: 画像をデコードする前に寸法を確認し、ヘッダで極端に大きな寸法を宣言した画像でメモリを使い果たさないようにしました（一辺 20000px または総画素数 5000 万画素まで）</li>
+<li>セキュリティ: パスワードを変更すると、そのユーザーの既存のセッションをすべて無効にするようにしました。自分のパスワードを変更した場合も、今のブラウザにはあらためてログイン状態を発行します</li>
+<li>セキュリティ: セッションを Cookie の値そのものではなくハッシュ値で保存するようにし、データベースやバックアップが漏れてもログインに使われないようにしました。この更新を適用すると、全ユーザーが一度ログアウトされます</li>
+<li>セキュリティ: 管理ユーザー以外が設定した AI の接続先から、サーバー内部やローカルネットワークのアドレスへ接続できないようにしました。管理ユーザーはこれまでどおりローカルの LLM を使えます</li>
+<li>セキュリティ: ログイン失敗の記録をデータベースに保存するようにし、CGI で動かしている場合もパスワードの総当たり対策が働くようにしました</li>
+</ul>
+<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.25">Serene Bach v4.0.0-beta.25</a></p>
+]]></content>
+  </entry>
   <entry>
     <title>Release Serene Bach v4.0.0-beta.24</title>
     <id>https://go.serenebach.net/news/entry/v400b024-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b024-en/"></link>
     <published>2026-10-24T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -32,7 +76,7 @@
     <id>https://go.serenebach.net/news/entry/v400b024-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b024-ja/"></link>
     <published>2026-10-24T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -52,7 +96,7 @@
     <id>https://go.serenebach.net/news/entry/v400b023-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b023-en/"></link>
     <published>2026-10-16T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -74,7 +118,7 @@
     <id>https://go.serenebach.net/news/entry/v400b023-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b023-ja/"></link>
     <published>2026-10-16T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -96,7 +140,7 @@
     <id>https://go.serenebach.net/news/entry/v400b022-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b022-en/"></link>
     <published>2026-08-14T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -114,7 +158,7 @@
     <id>https://go.serenebach.net/news/entry/v400b022-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b022-ja/"></link>
     <published>2026-08-14T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -132,7 +176,7 @@
     <id>https://go.serenebach.net/news/entry/v400b021-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b021-en/"></link>
     <published>2026-07-17T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -152,7 +196,7 @@
     <id>https://go.serenebach.net/news/entry/v400b021-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b021-ja/"></link>
     <published>2026-07-17T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -172,7 +216,7 @@
     <id>https://go.serenebach.net/news/entry/v400b020-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b020-en/"></link>
     <published>2026-06-28T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -191,7 +235,7 @@
     <id>https://go.serenebach.net/news/entry/v400b020-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b020-ja/"></link>
     <published>2026-06-28T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -210,7 +254,7 @@
     <id>https://go.serenebach.net/news/entry/v400b019-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b019-en/"></link>
     <published>2026-06-02T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -229,7 +273,7 @@
     <id>https://go.serenebach.net/news/entry/v400b019-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b019-ja/"></link>
     <published>2026-06-02T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -248,7 +292,7 @@
     <id>https://go.serenebach.net/news/entry/v400b018-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b018-en/"></link>
     <published>2026-05-29T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -267,7 +311,7 @@
     <id>https://go.serenebach.net/news/entry/v400b018-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b018-ja/"></link>
     <published>2026-05-29T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -286,7 +330,7 @@
     <id>https://go.serenebach.net/news/entry/v400b017-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b017-en/"></link>
     <published>2026-05-26T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -308,7 +352,7 @@
     <id>https://go.serenebach.net/news/entry/v400b017-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b017-ja/"></link>
     <published>2026-05-26T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -330,7 +374,7 @@
     <id>https://go.serenebach.net/news/entry/v400b016-en/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b016-en/"></link>
     <published>2026-05-25T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -350,7 +394,7 @@
     <id>https://go.serenebach.net/news/entry/v400b016-ja/</id>
     <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b016-ja/"></link>
     <published>2026-05-25T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
+    <updated>2026-10-25T19:26:08Z</updated>
     <author>
       <name>admin</name>
     </author>
@@ -363,42 +407,6 @@
 <li>リファクタリング: 管理画面 JavaScript モジュールの共通ヘルパーを整理し、重複を解消しました</li>
 </ul>
 <p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.16">Serene Bach v4.0.0-beta.16</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Release Serene Bach v4.0.0-beta.15</title>
-    <id>https://go.serenebach.net/news/entry/v400b015-en/</id>
-    <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b015-en/"></link>
-    <published>2026-05-24T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
-    <author>
-      <name>admin</name>
-    </author>
-    <category term="Information"></category>
-    <content type="html"><![CDATA[<p>Serene Bach v4.0.0-beta.15 has been released.</p>
-<ul>
-<li>Feature: Template assets now accept JavaScript files and web fonts.</li>
-<li>Feature: The file library now supports audio, document, and movie files.</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.15">Serene Bach v4.0.0-beta.15</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Serene Bach v4.0.0-beta.15 リリース</title>
-    <id>https://go.serenebach.net/news/entry/v400b015-ja/</id>
-    <link rel="alternate" type="text/html" href="https://go.serenebach.net/news/entry/v400b015-ja/"></link>
-    <published>2026-05-24T15:00:00Z</published>
-    <updated>2026-10-24T21:52:04Z</updated>
-    <author>
-      <name>admin</name>
-    </author>
-    <category term="お知らせ"></category>
-    <content type="html"><![CDATA[<p>Serene Bach v4.0.0-beta.15 をリリースしています。</p>
-<ul>
-<li>機能追加: テンプレートアセットで JavaScript ファイルおよびウェブフォントを受け付けるようにしました</li>
-<li>機能追加: ファイルライブラリで音声・ドキュメント・動画ファイルをサポートしました</li>
-</ul>
-<p>ダウンロード: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.15">Serene Bach v4.0.0-beta.15</a></p>
 ]]></content>
   </entry>
 </feed>

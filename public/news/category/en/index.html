@@ -32,6 +32,24 @@
     </nav>
   </header>
   <main>
+<a id="mark49"></a>
+    <article class="entry">
+      <div>
+        <p class="eyebrow">Information on 2026-10-26</p>
+        <h2><a href="https://go.serenebach.net/news/entry/v400b025-en/"><img src="https://go.serenebach.net/news/img/og/49.png" alt="Release Serene Bach v4.0.0-beta.25"></a></h2>
+      </div>
+      <div class="entry_body"><p>Serene Bach v4.0.0-beta.25 has been released.</p>
+<ul>
+<li>Development: Added a CI check that scans dependencies for known vulnerabilities with govulncheck across every released platform.</li>
+<li>Security: Image dimensions are now checked before decoding, so an image whose header declares huge dimensions can no longer exhaust memory (limits: 20000 px per side or 50 million pixels in total).</li>
+<li>Security: Changing a password now signs that user out of every existing session. When you change your own password, your current browser is signed in again with a fresh session.</li>
+<li>Security: Sessions are now stored as hashes rather than the cookie values themselves, so a leaked database or backup cannot be used to sign in. Upgrading signs every user out once.</li>
+<li>Security: AI endpoints configured by non-admin users can no longer reach internal or local network addresses from the server. Admins can still use local LLMs as before.</li>
+<li>Security: Login failures are now recorded in the database, so the brute-force protection on the login page also works when running under CGI.</li>
+</ul>
+<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.25">Serene Bach v4.0.0-beta.25</a></p>
+</div>
+    </article>
 <a id="mark47"></a>
     <article class="entry">
       <div>
@@ -173,20 +191,6 @@
 <li>Refactor: Extracted shared helpers in the admin JavaScript module to remove duplication.</li>
 </ul>
 <p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.16">Serene Bach v4.0.0-beta.16</a></p>
-</div>
-    </article>
-<a id="mark29"></a>
-    <article class="entry">
-      <div>
-        <p class="eyebrow">Information on 2026-05-25</p>
-        <h2><a href="https://go.serenebach.net/news/entry/v400b015-en/"><img src="https://go.serenebach.net/news/img/og/29.png" alt="Release Serene Bach v4.0.0-beta.15"></a></h2>
-      </div>
-      <div class="entry_body"><p>Serene Bach v4.0.0-beta.15 has been released.</p>
-<ul>
-<li>Feature: Template assets now accept JavaScript files and web fonts.</li>
-<li>Feature: The file library now supports audio, document, and movie files.</li>
-</ul>
-<p>Download: <a href="https://github.com/serendipitynz/serenebach/releases/tag/v4.0.0-beta.15">Serene Bach v4.0.0-beta.15</a></p>
 </div>
     </article>
   </main>
